@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avalia</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/front-end/login.css" />
 </head>
 <body>
 
@@ -26,12 +26,12 @@
             <h2 id="form-title">Sign In</h2>
             <asp:Panel ID="authPanel" runat="server">
                 <div class="form-control">
-                   <asp:TextBox ID="usernameTextBox" runat="server" CssClass="input-field" AutoCompleteType="Disabled" required></asp:TextBox>
+                   <asp:TextBox ID="usernameTextBox" runat="server" CssClass="input-field" AutoCompleteType="Disabled" required=""></asp:TextBox>
                    
                     <label>Username</label>
                 </div>
                 <div class="form-control">
-                    <asp:TextBox ID="passwordTextBox" runat="server" CssClass="input-field" TextMode="Password" AutoCompleteType="Disabled" required></asp:TextBox>
+                    <asp:TextBox ID="passwordTextBox" runat="server" CssClass="input-field" TextMode="Password" AutoCompleteType="Disabled" required=""></asp:TextBox>
                     
                     <label>Password</label>
                 </div>
