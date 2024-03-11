@@ -12,7 +12,9 @@
 <body>
 
     <form id="form1" runat="server">
-        <div class="header">
+        <div id="container">
+            <div id="signup-form" class="form-container">
+            <div class="header">
             <div class="background"></div>
             <nav>
                 <a href="#"><img src="assets/avalia_logo.svg" alt="logo" /></a>
@@ -35,7 +37,7 @@
                     
                     <label>Password</label>
                 </div>
-                <asp:Button ID="submitButton" runat="server" Text="Sign In" CssClass="sign-btn" />
+                <asp:Button ID="submitButton" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSubmit_Click"/>
                 <div class="form-help">
                     <div class="remember-me">
                         <asp:CheckBox ID="rememberCheckBox" runat="server" CssClass="remember-me" />
@@ -47,10 +49,13 @@
             <asp:Panel ID="signupPanel" runat="server" Visible="false">
                 <!-- Sign Up Form -->
             </asp:Panel>
-            <p id="accountSign">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+            <p id="accountSign">Don't have an account? <a href="SignUp.aspx" id="signup-link">Sign up</a></p>
         </div>
+        </div>
+        </div>
+       
+        
     </form>
 
-    <script src="login.js"></script>
 </body>
 </html>

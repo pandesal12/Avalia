@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="front-end\createAccount.js" />
     <Content Include="front-end\homepage.css" />
     <Content Include="front-end\homepage.js" />
     <Content Include="front-end\images\avalia_logo.png" />

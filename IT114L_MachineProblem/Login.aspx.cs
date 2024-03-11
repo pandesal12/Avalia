@@ -13,5 +13,10 @@ namespace IT114L_MachineProblem
         {
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
         }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("homepage.aspx");
+        }
+
     }
 }
