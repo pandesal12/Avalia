@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem.front_end
+namespace IT114L_MachineProblem
 {
 
 
-    public partial class Schedulepage
+    public partial class Movies_User
     {
     }
 }

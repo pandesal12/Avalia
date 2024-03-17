@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace IT114L_MachineProblem.front_end
+namespace IT114L_MachineProblem
 {
-    public partial class Schedulepage : System.Web.UI.Page
+    public partial class Homepage_User : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

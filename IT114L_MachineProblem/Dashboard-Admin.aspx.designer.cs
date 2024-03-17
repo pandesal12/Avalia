@@ -11,7 +11,7 @@ namespace IT114L_MachineProblem
 {
 
 
-    public partial class Homepage
+    public partial class Dashboard_Admin
     {
     }
 }

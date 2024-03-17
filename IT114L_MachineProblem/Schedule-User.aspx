@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Schedulepage.aspx.cs" Inherits="IT114L_MachineProblem.front_end.Schedulepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Schedule-User.aspx.cs" Inherits="IT114L_MachineProblem.Schedule_User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
@@ -21,7 +21,7 @@
                     <small>Taken</small><!--red-->
                 </li>
             </ul> 
-             
+         
         </div>
         <div class="schedcinema-container">
             <div class="schedcinema-details">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <button class="btnSeats">Book Seats</button>
-                
+            
             </div>
         </div>
     </div>

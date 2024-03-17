@@ -11,7 +11,7 @@ namespace IT114L_MachineProblem
 {
 
 
-    public partial class Site
+    public partial class Admin
     {
 
         /// <summary>

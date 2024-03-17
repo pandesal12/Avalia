@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="IT114L_MachineProblem.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="IT114L_MachineProblem.Admin" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema Booking Homepage</title>
     <!--Link to CSS file-->
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/homepage.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/admin-styles.css") %>" />
     <!--Unicons CSS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
@@ -28,10 +28,10 @@
             </div>
             <ul class="nav-links">
                 <li><i class="uil uil-times navCloseBtn"></i></li>
-                <li><a href="Homepage.aspx">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="Schedulepage.aspx">Schedule</a></li>
-                <!--Insert Search Icon-->
+                <li><a href="Dashboard-Admin">Dashboard</a></li>
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Schedule</a></li>
+                <!--Wala pa user wait lang-->
                 <li><a href="#">User</a></li>
             </ul>
             <i class="uil uil-search search-icons" id="searchIcon"></i>
@@ -49,6 +49,6 @@
     </form>
 
     <!--Link to JS file-->
-    <script src="<%= ResolveUrl("~/front-end/homepage.js") %>"></script>
+    <script src="<%= ResolveUrl("~/front-end/admin-script.js") %>"></script>
 </body>
 </html>

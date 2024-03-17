@@ -67,9 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard-Admin.aspx" />
+    <Content Include="front-end\admin-script.js" />
+    <Content Include="front-end\admin-styles.css" />
     <Content Include="front-end\createAccount.js" />
-    <Content Include="front-end\homepage.css" />
-    <Content Include="front-end\homepage.js" />
     <Content Include="front-end\images\60mins.jpg" />
     <Content Include="front-end\images\abigail_1.jpg" />
     <Content Include="front-end\images\abigail_2.jpg" />
@@ -99,27 +100,67 @@
     <Content Include="front-end\images\transformers.jpg" />
     <Content Include="front-end\images\upgraded.jpg" />
     <Content Include="front-end\images\youpeople.jpg" />
-    <Content Include="Schedulepage.aspx" />
-    <Content Include="Homepage.aspx" />
+    <Content Include="front-end\user-script.js" />
+    <Content Include="front-end\user-styles.css" />
+    <Content Include="Homepage-User.aspx" />
+    <Content Include="Manage-Admin.aspx" />
+    <Content Include="Movies-User.aspx" />
+    <Content Include="Schedule-Admin.aspx" />
+    <Content Include="Schedule-User.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="front-end\login.css" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Schedulepage.aspx.cs">
-      <DependentUpon>Schedulepage.aspx</DependentUpon>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Schedulepage.aspx.designer.cs">
-      <DependentUpon>Schedulepage.aspx</DependentUpon>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Homepage.aspx.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
+    <Compile Include="Dashboard-Admin.aspx.cs">
+      <DependentUpon>Dashboard-Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
+    <Compile Include="Dashboard-Admin.aspx.designer.cs">
+      <DependentUpon>Dashboard-Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage-User.aspx.cs">
+      <DependentUpon>Homepage-User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage-User.aspx.designer.cs">
+      <DependentUpon>Homepage-User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-Admin.aspx.cs">
+      <DependentUpon>Manage-Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-Admin.aspx.designer.cs">
+      <DependentUpon>Manage-Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies-User.aspx.cs">
+      <DependentUpon>Movies-User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies-User.aspx.designer.cs">
+      <DependentUpon>Movies-User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule-Admin.aspx.cs">
+      <DependentUpon>Schedule-Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule-Admin.aspx.designer.cs">
+      <DependentUpon>Schedule-Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule-User.aspx.cs">
+      <DependentUpon>Schedule-User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule-User.aspx.designer.cs">
+      <DependentUpon>Schedule-User.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -136,17 +177,18 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
-    <Content Include="Site.Master" />
+    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

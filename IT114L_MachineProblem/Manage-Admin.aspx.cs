@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace IT114L_MachineProblem
 {
-    public partial class Homepage : System.Web.UI.Page
+    public partial class Manage_Admin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -34,6 +34,8 @@ body {
     background: var(--content-background-color);
 }
 
+/* NAVIGATION BAR ===============================*/
+
 .nav {
     position: fixed; /*relative*/
     top: 0;
@@ -263,15 +265,15 @@ a {
     z-index: 1;
 }
 
-    .carousel .list .item:nth-child(1) .author,
-    .carousel .list .item:nth-child(1) .title,
-    .carousel .list .item:nth-child(1) .topic,
-    .carousel .list .item:nth-child(1) .buttons {
-        transform: translateY(50px);
-        filter: blur(20px);
-        opacity: 0;
-        animation: showContent 0.5s 1s linear 1 forwards;
-    }
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
 
 @keyframes showContent {
     to {
@@ -342,12 +344,12 @@ a {
     z-index: 2;
 }
 
-    .carousel.prev .list .item:nth-child(2) img {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        animation: outImage 0.5s linear 1 forwards;
-    }
+.carousel.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
 
 @keyframes outImage {
     to {
@@ -599,7 +601,7 @@ a {
     color: var(--light-text-color);
     list-style-type: none;
     /*display: flex;
-    justify-content: space-between;*/
+justify-content: space-between;*/
 }
 
 .schedcinema-seating .showcase li {
@@ -755,7 +757,7 @@ a {
     cursor: pointer;
 }
 
-/* BREAKPOINTS */
+/* BREAKPOINTS======================================================= */
 @media screen and (max-width: 1160px) {
     /* NAVIGATION BAR */
     .nav {
@@ -799,6 +801,7 @@ a {
         max-width: 400px;
     }
 
+    /* HOMEPAGE MAIN CONTENT */
     .post-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -865,9 +868,9 @@ a {
         padding-right: 0;
     }
 
-        .carousel .list .item .content .title {
-            font-size: 30px;
-        }
+    .carousel .list .item .content .title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 500px) {

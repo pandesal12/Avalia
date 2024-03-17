@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="IT114L_MachineProblem.Homepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Homepage-User.aspx.cs" Inherits="IT114L_MachineProblem.Homepage_User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
@@ -142,7 +142,7 @@
                                 <a href="#">Fantasy</a>,&nbsp;<a href="#">Adventure</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                                 <a href="#">Action</a>,&nbsp;<a href="#">Thriller</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@
                                 <a href="#">Romance</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                                 <a href="#">Action</a>,&nbsp;<a href="#">Sport</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                                 <a href="#">Comedy</a>,&nbsp;<a href="#">Adventure</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@
                                 <a href="#">Comedy</a>,&nbsp;<a href="#">Romance</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -268,7 +268,7 @@
                                 <a href="#">Action</a>,&nbsp;<a href="#">Sci-fi</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                                 <a href="#">Action</a>,&nbsp;<a href="#">Adventure</a>,&nbsp;<a href="#">Fantasy</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -310,7 +310,7 @@
                                 <a href="#">Horror</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -331,7 +331,7 @@
                                 <a href="#">Adventure</a>,&nbsp;<a href="#">Comedy</a>,&nbsp;<a href="#">Fantasy</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -352,7 +352,7 @@
                                 <a href="#">Horror</a>,&nbsp;<a href="#">Mystery</a>,&nbsp;<a href="#">Thriller</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -373,7 +373,7 @@
                                 <a href="#">Horror</a>,&nbsp;<a href="#">Mystery</a>,&nbsp;<a href="#">Thriller</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -394,7 +394,7 @@
                                 <a href="#">Adventure</a>,&nbsp;<a href="#">Family</a>,&nbsp;<a href="#">Fantasy</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -415,7 +415,7 @@
                                 <a href="#">Comedy</a>,&nbsp;<a href="#">Romance</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -436,7 +436,7 @@
                                 <a href="#">Action</a>,&nbsp;<a href="#">Adventure</a>,&nbsp;<a href="#">Drama</a>
                             </div>
                         </div>
-        
+    
                     </div>
                 </div>
             </div>
@@ -462,5 +462,4 @@
             </div>
         </div>
     </section>
-
 </asp:Content>
