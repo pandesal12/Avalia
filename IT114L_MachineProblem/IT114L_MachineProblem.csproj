@@ -15,7 +15,7 @@
     <AssemblyName>IT114L_MachineProblem</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort>44314</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -70,7 +70,36 @@
     <Content Include="front-end\createAccount.js" />
     <Content Include="front-end\homepage.css" />
     <Content Include="front-end\homepage.js" />
+    <Content Include="front-end\images\60mins.jpg" />
+    <Content Include="front-end\images\abigail_1.jpg" />
+    <Content Include="front-end\images\abigail_2.jpg" />
+    <Content Include="front-end\images\apes_1.jpeg" />
+    <Content Include="front-end\images\apes_2.jpg" />
     <Content Include="front-end\images\avalia_logo.png" />
+    <Content Include="front-end\images\barbie.jpg" />
+    <Content Include="front-end\images\damsel.jpg" />
+    <Content Include="front-end\images\despicableme4_1.jpg" />
+    <Content Include="front-end\images\despicableme4_2.jpg" />
+    <Content Include="front-end\images\fallguy_1.jpg" />
+    <Content Include="front-end\images\fallguy_2.jpg" />
+    <Content Include="front-end\images\godzilla_1.jpg" />
+    <Content Include="front-end\images\godzilla_2.png" />
+    <Content Include="front-end\images\hunger.jpg" />
+    <Content Include="front-end\images\hungergames.jpg" />
+    <Content Include="front-end\images\insidious.jpg" />
+    <Content Include="front-end\images\kraven_1.jpg" />
+    <Content Include="front-end\images\kraven_2.jpg" />
+    <Content Include="front-end\images\lightsout.jpg" />
+    <Content Include="front-end\images\mynameislohkiwan.jpg" />
+    <Content Include="front-end\images\orionandthedark.jpg" />
+    <Content Include="front-end\images\theexorcist.jpg" />
+    <Content Include="front-end\images\thelittlemermaid.jpg" />
+    <Content Include="front-end\images\themarvels.jpeg" />
+    <Content Include="front-end\images\thenun2.jpg" />
+    <Content Include="front-end\images\transformers.jpg" />
+    <Content Include="front-end\images\upgraded.jpg" />
+    <Content Include="front-end\images\youpeople.jpg" />
+    <Content Include="Schedulepage.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="front-end\login.css" />
@@ -78,6 +107,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Schedulepage.aspx.cs">
+      <DependentUpon>Schedulepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedulepage.aspx.designer.cs">
+      <DependentUpon>Schedulepage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

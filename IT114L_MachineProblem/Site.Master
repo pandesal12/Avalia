@@ -28,9 +28,9 @@
             </div>
             <ul class="nav-links">
                 <li><i class="uil uil-times navCloseBtn"></i></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="Homepage.aspx">Home</a></li>
                 <li><a href="#">Movies</a></li>
-                <li><a href="#">Schedule</a></li>
+                <li><a href="Schedulepage.aspx">Schedule</a></li>
                 <!--Insert Search Icon-->
                 <li><a href="#">User</a></li>
             </ul>
