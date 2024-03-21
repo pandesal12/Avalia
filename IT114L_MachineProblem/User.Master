@@ -26,18 +26,26 @@
                 <!--<img src="/avalia_logo.png" alt="avalia">-->
                 <asp:Image runat="server" ImageUrl="/front-end/images/avalia_logo.png" alt="AVALIA-logo" />
             </div>
-            <ul class="nav-links">
-                <li><i class="uil uil-times navCloseBtn"></i></li>
-                <li><a href="Homepage-User.aspx">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="Schedule-User.aspx">Schedule</a></li>
-                <!--Wala pa user wait lang-->
-                <li><a href="#">User</a></li>
-            </ul>
+            <div class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <a href="Homepage-User.aspx">Home</a>
+                <a href="Movies-User.aspx">Movies</a>
+                <a href="Schedule-User.aspx">Schedule</a>
+                <!--User-Profile-->
+                <div class="userprofile">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/samplepic.jpg" alt="sample-pic" />
+                    <label id="user-name1">Edna</label>
+                </div>
+            </div>
             <i class="uil uil-search search-icons" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icons"></i>
                 <input type="text" placeholder="Search here..." />
+            </div>
+            <!--User-Profile-->
+            <div class="userprofile userprofile-visible">
+                <label id="user-name2">Edna</label>
+                <asp:Image runat="server" ImageUrl="/front-end/images/samplepic.jpg" alt="sample-pic" />
             </div>
         </nav>
 

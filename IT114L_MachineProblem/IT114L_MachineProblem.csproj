@@ -94,6 +94,7 @@
     <Content Include="front-end\images\movie-bg.jpg" />
     <Content Include="front-end\images\mynameislohkiwan.jpg" />
     <Content Include="front-end\images\orionandthedark.jpg" />
+    <Content Include="front-end\images\samplepic.jpg" />
     <Content Include="front-end\images\theexorcist.jpg" />
     <Content Include="front-end\images\thelittlemermaid.jpg" />
     <Content Include="front-end\images\themarvels.jpeg" />

@@ -39,6 +39,11 @@
                 <i class="uil uil-search search-icons"></i>
                 <input type="text" placeholder="Search here..." />
             </div>
+            <!--User-Profile-->
+            <div class="userprofile userprofile-visible">
+                <label id="user-name2">Edna</label>
+                <asp:Image runat="server" ImageUrl="/front-end/images/samplepic.jpg" alt="sample-pic" />
+            </div>
         </nav>
 
         <div id="ChangeContent" runat="server">
