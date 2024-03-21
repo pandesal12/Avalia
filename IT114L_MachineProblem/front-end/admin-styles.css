@@ -144,6 +144,95 @@ a {
     display: none;
 }
 
+.manageMovie {
+    margin:170px;
+}
+
+.manageMovie h2 {
+    color: #fff;
+    position: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.addMovie {
+    background-color: #fff;
+    color: #151111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.addMovie:hover {
+    background-color: #3C3C3C;
+    cursor: pointer;
+    color: #fff;
+}
+
+.movieModify {
+    list-style: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieModify li {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.movieModify li:last-child {
+    margin-right: 0; 
+}
+
+.movieModify li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.movieList {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+}
+
+.TopGun {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieList li{
+    margin-right: 15px;
+    color: #fff;
+}
+
+.movieList li:last-child {
+    margin-right: 0;
+}
+
+.movieList a {
+    color: #fff;
+}
+
+.movieList a:hover {
+    text-decoration: underline;
+}
+
+.posterImage {
+    width: 5rem;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 
 /* BREAKPOINTS======================================================= */
 @media screen and (max-width: 1160px) {

@@ -29,7 +29,7 @@
             <ul class="nav-links">
                 <li><i class="uil uil-times navCloseBtn"></i></li>
                 <li><a href="Dashboard-Admin">Dashboard</a></li>
-                <li><a href="#">Manage</a></li>
+                <li><a href="Manage-Admin.aspx">Manage</a></li>
                 <li><a href="#">Schedule</a></li>
                 <!--Wala pa user wait lang-->
                 <li><a href="#">User</a></li>

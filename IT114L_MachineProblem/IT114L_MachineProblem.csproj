@@ -91,6 +91,7 @@
     <Content Include="front-end\images\kraven_1.jpg" />
     <Content Include="front-end\images\kraven_2.jpg" />
     <Content Include="front-end\images\lightsout.jpg" />
+    <Content Include="front-end\images\movie-bg.jpg" />
     <Content Include="front-end\images\mynameislohkiwan.jpg" />
     <Content Include="front-end\images\orionandthedark.jpg" />
     <Content Include="front-end\images\theexorcist.jpg" />

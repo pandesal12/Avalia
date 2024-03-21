@@ -14,7 +14,7 @@
             <div class="header">
             <div class="background"></div>
             <nav>
-                <a href="#"><img src="assets/avalia_logo.svg" alt="logo" /></a>
+                <a href="#"><img src="/front-end/images/avalia_logo.png" alt="logo" /></a>
             </nav>
             <div class="tagline">
                 <p class="bigText" runat="server">Where every seat tells a story.</p>
