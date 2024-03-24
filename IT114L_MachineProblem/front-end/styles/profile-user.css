@@ -1,0 +1,205 @@
+﻿/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --navbar-background-color: #0D140C;
+    --navbar-background-transparent-color: #151b14ce;
+    --content-background-color: #191f18;
+    --movie-container-color: #3C3C3C;
+    --user-container-color: #262626;
+    --dark-user-container-color: #1d1a1a;
+    --darkhover-user-container-color: #2e2b2b;
+    --filter-container-active-color: #0D140C;
+    --filter-container-color: #7E7373;
+    --light-text-color: #fff;
+    --movie-name-text-color: #dfdfdf;
+    --muted-text-color: #969696;
+    --dark-text-color: #000;
+    --red-text-color: #f5182ef8;
+    --green-text-color: #18f53df8;
+    --status-container-color: #e70634;
+    --option-list-color: #0d140cc7;
+    --btn-color-1: #C10214;
+    --seat-available-color: #D9D9D9;
+    --seat-selected-color: #FFBE17;
+    --seat-taken-color: #C20114;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--content-background-color);
+}
+
+/* USER PROFILE PAGE =================================================== */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1170px;
+    max-height: 1250px;
+    margin: 210px auto 30px auto; /*71px*/
+    color: var(--light-text-color);
+    background-color: var(--movie-container-color);
+    border-radius: 15px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info img {
+    width: 192px;
+    height: 192px;
+    border-radius: 100px;
+    top: -80px;
+    left: 40px;
+    position: relative;
+}
+
+.user-info .user-description {
+    margin-left: 60px;
+}
+
+.user-info .greeting-text {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    top: -110px;
+}
+
+.user-info .userinfo-count {
+    display: flex;
+    margin: 5px;
+    gap: 50px;
+    position: relative;
+    top: -90px;
+    font-weight: 500;
+    }
+
+#pendingCount,
+#completeCount {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#pendingCount {
+    color: var(--red-text-color);
+}
+
+#completeCount {
+    color: var(--green-text-color);
+}
+
+
+.profile-container table {
+    width: 82vw;
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+}
+
+.profile-container .table_body label {
+    width: 100%;
+    height: 10%;
+    padding: .5rem 1rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--user-container-color);
+    color: var(--muted-text-color);
+    font-weight: 700;
+}
+
+.profile-container .table_body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: var(--user-container-color);
+    margin: auto auto .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+    position: relative;
+    top: -80px;
+    height: 500px;
+}
+
+.profile-container .table_body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.profile-container .table_body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.profile-container .table_body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.profile-container table {
+    width: 100%;
+}
+
+.profile-container td img {
+    height: 85px;
+    width: 85px;
+    border-radius: 20px;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
+.profile-container table,
+.profile-container th,
+.profile-container td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+.profile-container .table_body th {
+    position: sticky;
+    top: 49px;
+    background-color: var(--user-container-color);
+    backdrop-filter: blur(15px);
+    background: transparent;
+}
+
+.profile-container tbody tr:nth-child(odd) {
+    background-color: var(--dark-user-container-color);
+}
+
+.profile-container tbody tr:hover {
+    background-color: var(--darkhover-user-container-color);
+}
+
+.seats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+}
+
+.profile-container .table_body .seats.waiting {
+    background-color: #b63a3a;
+}
+
+.profile-container .table_body .seats.inuse {
+    background-color: #cea651;
+}
+
+.profile-container .table_body .seats.complete {
+    background-color: #61b63a;
+}

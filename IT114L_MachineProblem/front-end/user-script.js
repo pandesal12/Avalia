@@ -155,3 +155,18 @@ tabs.forEach((tab) => {
         });
     });
 });
+
+// User Profile
+const pendingSpan = document.getElementById('pendingCount');
+const completeSpan = document.getElementById('completeCount');
+const tbodyPending = document.getElementById('pending-movies');
+const tbodyFinish = document.getElementById('finished-movies');
+
+
+// Count the number of <tr> elements inside the tbody
+const pendingCount = tbodyPending.getElementsByTagName('tr').length;
+const completeCount = tbodyFinish.getElementsByTagName('tr').length;
+
+// Update the inner text of the spans with the counts
+pendingSpan.textContent = pendingCount;
+completeSpan.textContent = completeCount;

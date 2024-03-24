@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|C:\\Users\\WIN 11\\source\\repos\\Avalia\\it114l_machineproblem\\schedule-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\schedule-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\user-script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\user-script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\admin-script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\admin-script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\admin-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\admin-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\user-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\user-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|C:\\Users\\WIN 11\\source\\repos\\Avalia\\it114l_machineproblem\\dashboard-admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\dashboard-admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|C:\\Users\\WIN 11\\source\\repos\\Avalia\\it114l_machineproblem\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|C:\\Users\\WIN 11\\source\\repos\\Avalia\\it114l_machineproblem\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\homepage-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\homepage-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|C:\\Users\\WIN 11\\source\\repos\\Avalia\\it114l_machineproblem\\movies-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\movies-user.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\styles\\movie-user.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\styles\\movie-user.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\styles\\masterpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\styles\\masterpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|c:\\users\\win 11\\source\\repos\\avalia\\it114l_machineproblem\\front-end\\styles\\homepage-user.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B4765DB9-6E39-4DDE-B63B-4CC0226EA0EC}|IT114L_MachineProblem\\IT114L_MachineProblem.csproj|solutionrelative:it114l_machineproblem\\front-end\\styles\\homepage-user.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,110 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "user-script.js",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\user-script.js",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\user-script.js",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\user-script.js",
-              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\user-script.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-17T12:18:11.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "admin-script.js",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\admin-script.js",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\admin-script.js",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\admin-script.js*",
-              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\admin-script.js*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-17T10:27:46.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "admin-styles.css",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\admin-styles.css",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\admin-styles.css",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\admin-styles.css",
-              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\admin-styles.css",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAswK4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-17T09:26:25.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "user-styles.css",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\user-styles.css",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\user-styles.css",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\user-styles.css",
-              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\user-styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Title": "homepage-user.css",
+              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\homepage-user.css",
+              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\styles\\homepage-user.css",
+              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\homepage-user.css",
+              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\styles\\homepage-user.css",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAAM4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-17T09:25:31.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.Master",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\User.Master",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\User.Master",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\User.Master",
-              "RelativeToolTip": "IT114L_MachineProblem\\User.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:26:02.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Admin.Master",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Admin.Master",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\Admin.Master",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Admin.Master",
-              "RelativeToolTip": "IT114L_MachineProblem\\Admin.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:20:47.744Z",
+              "WhenOpened": "2024-03-24T13:53:23.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Schedule-User.aspx",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Schedule-User.aspx",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\Schedule-User.aspx",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Schedule-User.aspx",
-              "RelativeToolTip": "IT114L_MachineProblem\\Schedule-User.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:45:11.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Movies-User.aspx",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Movies-User.aspx",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\Movies-User.aspx",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Movies-User.aspx",
-              "RelativeToolTip": "IT114L_MachineProblem\\Movies-User.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:52:03.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Homepage-User.aspx",
               "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Homepage-User.aspx",
               "RelativeDocumentMoniker": "IT114L_MachineProblem\\Homepage-User.aspx",
@@ -177,20 +67,46 @@
               "RelativeToolTip": "IT114L_MachineProblem\\Homepage-User.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:44:04.179Z",
+              "WhenOpened": "2024-03-24T13:53:18.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard-Admin.aspx",
-              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Dashboard-Admin.aspx",
-              "RelativeDocumentMoniker": "IT114L_MachineProblem\\Dashboard-Admin.aspx",
-              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\Dashboard-Admin.aspx",
-              "RelativeToolTip": "IT114L_MachineProblem\\Dashboard-Admin.aspx",
+              "DocumentIndex": 3,
+              "Title": "masterpage.css",
+              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\masterpage.css",
+              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\styles\\masterpage.css",
+              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\masterpage.css",
+              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\styles\\masterpage.css",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAJwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-24T13:23:14.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "movie-user.css",
+              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\movie-user.css",
+              "RelativeDocumentMoniker": "IT114L_MachineProblem\\front-end\\styles\\movie-user.css",
+              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\front-end\\styles\\movie-user.css",
+              "RelativeToolTip": "IT114L_MachineProblem\\front-end\\styles\\movie-user.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-24T11:59:24.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.Master",
+              "DocumentMoniker": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\User.Master",
+              "RelativeDocumentMoniker": "IT114L_MachineProblem\\User.Master",
+              "ToolTip": "C:\\Users\\WIN 11\\source\\repos\\Avalia\\IT114L_MachineProblem\\User.Master",
+              "RelativeToolTip": "IT114L_MachineProblem\\User.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T07:40:42.127Z",
+              "WhenOpened": "2024-03-24T11:43:21.281Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema Booking Homepage</title>
     <!--Link to CSS file-->
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/user-styles.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/masterpage.css") %>" />
     <!--Unicons CSS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
@@ -33,8 +33,8 @@
                 <a href="Schedule-User.aspx">Schedule</a>
                 <!--User-Profile-->
                 <div class="userprofile">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/samplepic.jpg" alt="sample-pic" />
-                    <label id="user-name1">Edna</label>
+                        <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
+                        <a href="UserProfile.aspx"><label id="user-name1">Edna</label></a>
                 </div>
             </div>
             <i class="uil uil-search search-icons" id="searchIcon"></i>
@@ -44,8 +44,8 @@
             </div>
             <!--User-Profile-->
             <div class="userprofile userprofile-visible">
-                <label id="user-name2">Edna</label>
-                <asp:Image runat="server" ImageUrl="/front-end/images/samplepic.jpg" alt="sample-pic" />
+                <a href="UserProfile.aspx"><label id="user-name2">Robert Fox</label></a>
+                    <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
             </div>
         </nav>
 

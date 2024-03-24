@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Homepage-User.aspx.cs" Inherits="IT114L_MachineProblem.Homepage_User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints-user.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/homepage-user.css") %>" />
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     <!--CAROUSEL-->
     <div class="carousel">

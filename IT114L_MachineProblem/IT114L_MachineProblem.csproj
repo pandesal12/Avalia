@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="Dashboard-Admin.aspx" />
     <Content Include="front-end\admin-script.js" />
-    <Content Include="front-end\admin-styles.css" />
     <Content Include="front-end\createAccount.js" />
     <Content Include="front-end\images\60mins.jpg" />
     <Content Include="front-end\images\abigail_1.jpg" />
@@ -94,7 +93,7 @@
     <Content Include="front-end\images\movie-bg.jpg" />
     <Content Include="front-end\images\mynameislohkiwan.jpg" />
     <Content Include="front-end\images\orionandthedark.jpg" />
-    <Content Include="front-end\images\samplepic.jpg" />
+    <Content Include="front-end\images\robert_fox.png" />
     <Content Include="front-end\images\theexorcist.jpg" />
     <Content Include="front-end\images\thelittlemermaid.jpg" />
     <Content Include="front-end\images\themarvels.jpeg" />
@@ -102,8 +101,17 @@
     <Content Include="front-end\images\transformers.jpg" />
     <Content Include="front-end\images\upgraded.jpg" />
     <Content Include="front-end\images\youpeople.jpg" />
+    <Content Include="front-end\styles\breakpoints-admin.css" />
+    <Content Include="front-end\styles\breakpoints-user.css" />
+    <Content Include="front-end\styles\dashboard-admin.css" />
+    <Content Include="front-end\styles\homepage-user.css" />
+    <Content Include="front-end\styles\manage-admin.css" />
+    <Content Include="front-end\styles\masterpage.css" />
+    <Content Include="front-end\styles\movie-user.css" />
+    <Content Include="front-end\styles\profile-user.css" />
+    <Content Include="front-end\styles\schedule-admin.css" />
+    <Content Include="front-end\styles\schedule-user.css" />
     <Content Include="front-end\user-script.js" />
-    <Content Include="front-end\user-styles.css" />
     <Content Include="Homepage-User.aspx" />
     <Content Include="Manage-Admin.aspx" />
     <Content Include="Movies-User.aspx" />
@@ -112,6 +120,7 @@
     <Content Include="Login.aspx" />
     <Content Include="front-end\login.css" />
     <Content Include="SignUp.aspx" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +194,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Manage-Admin.aspx.cs" Inherits="IT114L_MachineProblem.Manage_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints-admin.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/manage-admin.css") %>" />
 </asp:Content>
 
 
