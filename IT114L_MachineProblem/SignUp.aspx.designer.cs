@@ -24,57 +24,48 @@ namespace IT114L_MachineProblem
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// authPanel control.
+        /// txtUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel authPanel;
+        protected global::System.Web.UI.WebControls.TextBox txtUsername;
 
         /// <summary>
-        /// usernameTextBox control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// passwordTextBox control.
+        /// txtConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
 
         /// <summary>
-        /// submitButton control.
+        /// btnSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitButton;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
 
         /// <summary>
-        /// rememberCheckBox control.
+        /// imgBg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox rememberCheckBox;
-
-        /// <summary>
-        /// signupPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel signupPanel;
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgBg;
     }
 }

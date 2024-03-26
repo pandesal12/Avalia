@@ -103,6 +103,7 @@
     <Content Include="front-end\images\youpeople.jpg" />
     <Content Include="front-end\styles\breakpoints-admin.css" />
     <Content Include="front-end\styles\breakpoints-user.css" />
+    <Content Include="front-end\styles\createAccount.js" />
     <Content Include="front-end\styles\dashboard-admin.css" />
     <Content Include="front-end\styles\homepage-user.css" />
     <Content Include="front-end\styles\manage-admin.css" />
@@ -118,7 +119,7 @@
     <Content Include="Schedule-Admin.aspx" />
     <Content Include="Schedule-User.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="front-end\login.css" />
+    <Content Include="front-end\logSign.css" />
     <Content Include="SignUp.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
