@@ -44,7 +44,7 @@
             </div>
             <!--User-Profile-->
             <div class="userprofile userprofile-visible">
-                <a href="UserProfile.aspx"><label id="user-name2">Robert Fox</label></a>
+                <a href="UserProfile.aspx"><label id="user_name2" runat="server">Robert Fox</label></a>
                     <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
             </div>
         </nav>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="IT114L_MachineProblem.SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="IT114L_MachineProblem.Login" %>
 
 <!DOCTYPE html>
 
@@ -49,7 +49,7 @@
                                 </div>
 
                                 <div class="sign-btn">
-                                    <asp:Button runat="server" ID="btnSignUp" Text="Sign In" CssClass="btn" />
+                                    <asp:Button runat="server" ID="btnSignUp" Text="Sign In" CssClass="btn" OnClick="btnSignUp_Click" />
                                 </div>
                             </div>     
                        </div>

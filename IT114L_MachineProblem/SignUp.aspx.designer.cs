@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem
-{
+namespace IT114L_MachineProblem {
 
 
-    public partial class SignUp
-    {
+    public partial class SignUp {
 
         /// <summary>
         /// form1 control.

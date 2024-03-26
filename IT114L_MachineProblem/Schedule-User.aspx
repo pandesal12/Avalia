@@ -6,9 +6,18 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     <!--Schedule Page-->
     <div class="schedule-page">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <div class="HiddenFieldDataHere" id="selectedSeatsData" runat="server" style="display: none"></div>
+
+
+
+        <asp:HiddenField ID="hdnGeneratedData" runat="server" />
+
+
         <div class="schedcinema-seating">
-            <!--yung seats dito-->
-            <!--Status of Seats-->
+            
+            <link rel="stylesheet" href="seating-components/seating.css">
+            <div class="DivisionContainer"></div> <%--seating--%>
             <ul class="showcase">
                 <li>
                     <div class="seat"></div><!--baguhin nalang-->
@@ -45,10 +54,6 @@
             <div class="schedcinema-book">
                 <!--Location-->
                 <label>Location</label>
-                <select class="book-options">
-                    <option value="lcoation1">SM Sta. Rosa City</option>
-                    <option value="lcoation1">SM Calamba City</option>
-                </select>
                 <!--Show Time-->
                 <label>Show Time</label>
                 <select class="book-options">
@@ -64,18 +69,25 @@
 
                 <div class="book-details">
                     <div class="label1">
-                        <label>Selected Seats: </label>
+                        <label>Selected Seats: </label><label class="selectedSeats"></label>
                     </div>
                     <div class="label2">
-                        <label>Total Seats: </label>
+                        <label>Total Seats: </label><label class="totalSeats"></label>
+                    </div>
                     </div>
                     <div class="label3">
-                        <label>Available: </label>
+                        <label>Available: </label><label class="availableSeats"></label>
                     </div>
                 </div>
-                <button class="btnSeats">Book Seats</button>
+                <button class="btnSeats" onclick="executeSubmit()">Book Seats</button>
+                <%--<button class="btnSeats" onclick="showSelected(event)">Book Seats</button>--%>
+
+               <%--<asp:Button ID="bookSeats" runat="server" Text="Book Seats" CssClass="btnSeats" OnClick="bookSeats_Click"/>--%>
+                <%--<asp:Button ID="bookSeats" runat="server" Text="Book Seats" CssClass="btnSeats" OnClick="bookSeats_Click" OnClientClick="return false;" />--%>
+
             
             </div>
         </div>
     </div>
+    <script src="seating-components/seatings.js"></script>
 </asp:Content>

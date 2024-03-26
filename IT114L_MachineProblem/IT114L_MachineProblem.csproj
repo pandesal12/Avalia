@@ -125,6 +125,7 @@
     <Content Include="Login.aspx" />
     <Content Include="front-end\logSign.css" />
     <Content Include="SignUp.aspx" />
+    <Content Include="testSite.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testSite.aspx.cs">
+      <DependentUpon>testSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testSite.aspx.designer.cs">
+      <DependentUpon>testSite.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>

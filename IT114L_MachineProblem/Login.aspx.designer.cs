@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem
-{
+namespace IT114L_MachineProblem {
 
 
-    public partial class Login
-    {
+    public partial class Login {
 
         /// <summary>
         /// form1 control.
@@ -42,13 +40,13 @@ namespace IT114L_MachineProblem
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// btnSignIn control.
+        /// btnSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignIn;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
 
         /// <summary>
         /// imgBg control.

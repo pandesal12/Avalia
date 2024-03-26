@@ -55,7 +55,7 @@
                                 </div>
 
                                 <div class="sign-btn">
-                                    <asp:Button runat="server" ID="btnSignUp" Text="Sign Up" CssClass="btn" />
+                                    <asp:Button runat="server" ID="btnSignUp" Text="Sign Up" CssClass="btn" OnClick="btnSignUp_Click"/>
                                 </div>
                             </div>     
                        </div>
