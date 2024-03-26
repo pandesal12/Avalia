@@ -105,21 +105,18 @@
     <Content Include="front-end\images\transformers.jpg" />
     <Content Include="front-end\images\upgraded.jpg" />
     <Content Include="front-end\images\youpeople.jpg" />
-    <Content Include="front-end\styles\breakpoints-admin.css" />
-    <Content Include="front-end\styles\breakpoints-user.css" />
+    <Content Include="front-end\styles\breakpoints.css" />
     <Content Include="front-end\styles\dashboard-admin.css" />
     <Content Include="front-end\styles\homepage-user.css" />
     <Content Include="front-end\styles\manage-admin.css" />
     <Content Include="front-end\styles\masterpage.css" />
     <Content Include="front-end\styles\movie-user.css" />
     <Content Include="front-end\styles\profile-user.css" />
-    <Content Include="front-end\styles\schedule-admin.css" />
     <Content Include="front-end\styles\schedule-user.css" />
     <Content Include="front-end\user-script.js" />
     <Content Include="Homepage-User.aspx" />
     <Content Include="Manage-Admin.aspx" />
     <Content Include="Movies-User.aspx" />
-    <Content Include="Schedule-Admin.aspx" />
     <Content Include="Schedule-User.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="front-end\styles\logSign.css" />
@@ -162,13 +159,6 @@
     </Compile>
     <Compile Include="Movies-User.aspx.designer.cs">
       <DependentUpon>Movies-User.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Schedule-Admin.aspx.cs">
-      <DependentUpon>Schedule-Admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Schedule-Admin.aspx.designer.cs">
-      <DependentUpon>Schedule-Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Schedule-User.aspx.cs">
       <DependentUpon>Schedule-User.aspx</DependentUpon>
