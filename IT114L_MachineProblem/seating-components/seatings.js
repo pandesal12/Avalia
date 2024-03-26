@@ -32,7 +32,7 @@ initializeComponents.innerHTML = `
 </div>
 `
 //Demo (Occupied seats) Variables: (Taken from Database for example)
-const takenSeats = document.querySelector('.HiddenFieldDataHere').innerHTML.split(',');
+const takenSeats = document.querySelector('.HiddenFieldDataHere3').innerHTML.split(',');
 console.log(takenSeats);
 
 
@@ -126,11 +126,18 @@ function handleSeatClick() {
 function executeSubmit() {
     event.preventDefault();
     const hiddenField = document.querySelector(".HiddenFieldDataHere");
+    //const hiddenField2 = document.querySelector(".HiddenFieldDataHere2");
+
+    var parentWindow = window.parent;
+    var username = parentWindow.document.getElementById('user_name2');
+
+
     var str = hiddenField.innerHTML;
+/*    var username = hiddenField2.innerHTML;*/
     $.ajax({
         type: "POST",
-        url: "Schedule-User.aspx/updateData", 
-        data: JSON.stringify({ a : str}), 
+        url: "Schedule-User.aspx/updateData",
+        data: JSON.stringify({ a: str, username: username.innerText }), 
         contentType: "application/json; charset=utf-8",
         dataType: "text",
         success: function (response) {

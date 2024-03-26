@@ -7,7 +7,9 @@
     <!--Schedule Page-->
     <div class="schedule-page">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <div class="HiddenFieldDataHere" id="selectedSeatsData" runat="server" style="display: none"></div>
+        <div class="HiddenFieldDataHere" id="selectedSeatsData" runat="server" style="display: none"></div>
+        <div class="HiddenFieldDataHere3" id="occupiedSeatsData" runat="server" style="display: none"></div>
+        <div class="HiddenFieldDataName2" id="userLoggedIn" runat="server" style="display: none"></div>
 
 
 

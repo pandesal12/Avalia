@@ -15,7 +15,10 @@ namespace IT114L_MachineProblem
     public partial class Schedule_User : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
+            ReloadSeats();
+            Label name = Master.FindControl("user_name2") as Label;
 
+            //userLoggedIn.InnerText = name.Text;
         }
 
         private void ReloadSeats() {
@@ -32,7 +35,7 @@ namespace IT114L_MachineProblem
                             seatNumbers.Append(reader["seatNumber"].ToString() + ",");
                         }
                         string seatNumbersString = seatNumbers.ToString().TrimEnd(',');
-                        selectedSeatsData.InnerHtml = seatNumbersString;
+                        occupiedSeatsData.InnerHtml = seatNumbersString;
                     }
                 }
             }
@@ -43,24 +46,28 @@ namespace IT114L_MachineProblem
             //Response.Write($"<script>alert({selectedSeatsData.InnerText})</script>");
         }
         [WebMethod]
-        public static string updateData(string a) {
+        public static string updateData(string a, string username) {
             try {
                 var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
                 //var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString)) {
                     conn.Open();
 
-                    string[] seats = a.Split(',')
+                    string[] seats = a.Split(',');
 
 
-                    
-                    //add a code here where it will get the userID from the database by matching the username from Session["Logged"] <- this the user
-                   
-                        
-                        
-                        ;
+
+                    int userID = 0;
+
+                    string query = $"SELECT userID FROM Accounts WHERE username = '{username}'";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        object result = cmd.ExecuteScalar();
+                        userID = Convert.ToInt32(result);
+                    }
+
+
                     foreach (string s in seats) {
-                        string recordSeats = $"INSERT INTO Booking (userID, ScheduleID, seatNumber) VALUES (1, 2, '{s}')";
+                        string recordSeats = $"INSERT INTO Booking (userID, ScheduleID, seatNumber) VALUES ({userID}, 2, '{s}')";
                         using (SqlCommand checkUsernameCmd = new SqlCommand(recordSeats, conn)) {
                             int affectedRows = checkUsernameCmd.ExecuteNonQuery();
 
@@ -70,14 +77,10 @@ namespace IT114L_MachineProblem
                         }
                     }
                 }
-
                 return "successful";
             } catch (Exception ex) {
-                return "error: " + ex.Message;
+                return "error: " + ex.Message + username;
             }
         }
-
-
-
     }
 }
