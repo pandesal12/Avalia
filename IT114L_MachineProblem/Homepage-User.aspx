@@ -96,11 +96,6 @@
                 <div class="content"><div class="title">Godzilla x Kong: The New Empire</div></div>
             </div>
         </div>
-        <!--arrows-->
-        <div class="arrows">
-            <button id="prev">&laquo;</button>
-            <button id="next">&raquo;</button>
-        </div>
         <div class="time"></div>
     </div>
 

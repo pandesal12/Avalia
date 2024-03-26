@@ -84,6 +84,17 @@
     .post-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    /*MOVIE REVIEWS*/
+    .form-review .textarea textarea {
+        width: 650px;
+        transition: width 0.3s ease;
+    }
+
+    .comment-box {
+        width: 90vw;
+        transition: width 0.3s ease;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -155,6 +166,12 @@
     .profile-container .table_body label {
         width: 158%;
     }
+
+    /*MOVIE REVIEWS*/
+    .form-review .textarea textarea {
+        width: 550px;
+        transition: width 0.3s ease;
+    }
 }
 
 @media screen and (max-width: 678px) {
@@ -171,6 +188,12 @@
     .profile-container .table_body label {
         width: 187%;
     }
+
+    /*MOVIE REVIEWS*/
+    .form-review .textarea textarea {
+        width: 400px;
+        transition: width ease;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -182,5 +205,75 @@
     /* PROFILE */
     .profile-container .table_body label {
         width: 247%;
+    }
+
+    /*MOVIE REVIEWS*/
+    .reviews-total {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        transition: all 0.3s ease;
+    }
+
+    .rating-average {
+        width: 70%;
+        transition: width 0.3s ease;
+    }
+
+    .form-review .textarea textarea {
+        width: 225px;
+        transition: width 0.3s ease;
+    }
+
+    .star-widget label {
+        font-size: 14px;
+        padding: 2px;
+        transition: font-size 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /*Homepage Logo*/
+    .homepage-logo {
+        height: 25px;
+        transition: height 0.3s ease;
+    }
+
+    /*MOVIE REVIEWS*/
+    .moviereviews-container .nav-movies {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .moviereviews-container .nav-movies .btnSeats {
+        margin: 0 auto;
+        padding: 12px;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    .form-review .textarea textarea {
+        width: 150px;
+        transition: width 0.3s ease;
+    }
+
+    .star-widget label {
+        font-size: 12px;
+        padding: 2px;
+        transition: font-size 0.3s ease;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reviews {
+        flex-direction: row;
     }
 }

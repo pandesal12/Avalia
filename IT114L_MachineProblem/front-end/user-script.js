@@ -6,7 +6,7 @@ const nav = document.querySelector(".nav");
     userProf2 = document.querySelector(".userprofile-visible");
 
     searchIcon.addEventListener("click", () => {
-        // sumisilip pa si edna, may error pa
+        x
         if (window.matchMedia("(max-width: 768px)").matches) {
             userProf2.style.display = "none";
         } else {
@@ -34,6 +34,23 @@ const nav = document.querySelector(".nav");
     navCloseBtn.addEventListener("click", () => {
         nav.classList.remove("openNav");
     });
+
+//NavLink
+const links = document.querySelectorAll('.nav-links a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+
+            links.forEach(otherLink => {
+                if (otherLink !== link) {
+                    otherLink.classList.remove('active');
+                }
+            });
+
+            link.classList.add('active');
+        });
+    });
+
 
 //Carousel----------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
@@ -156,7 +173,7 @@ tabs.forEach((tab) => {
     });
 });
 
-// User Profile
+// User Profile----------------------------------------------------------
 const pendingSpan = document.getElementById('pendingCount');
 const completeSpan = document.getElementById('completeCount');
 const tbodyPending = document.getElementById('pending-movies');
@@ -170,3 +187,27 @@ const completeCount = tbodyFinish.getElementsByTagName('tr').length;
 // Update the inner text of the spans with the counts
 pendingSpan.textContent = pendingCount;
 completeSpan.textContent = completeCount;
+
+
+
+//Movie Review----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const postBtn = document.querySelector('.review-postbtn');
+    const endPostContainer = document.querySelector('.endpost-container');
+    const starWidget = document.querySelector('.star-widget');
+    const editBtn = document.querySelector('.edit');
+
+    // Event listener for post button click
+    postBtn.addEventListener("click", function (event) {
+        event.preventDefault(); 
+        starWidget.style.display = "none"; 
+        endPostContainer.style.display = "block";
+    });
+
+    // Event listener for edit button click
+    editBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        starWidget.style.display = "block"; 
+        endPostContainer.style.display = "none";
+    });
+});
