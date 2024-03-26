@@ -291,4 +291,19 @@ header ul {
     color: rgb(147, 35, 35);
 }
 
+@media screen and (min-width: 800px) {
+    .btn {
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .btn {
+        background-color: pink;
+    }
+
+    .signup {
+        display: none;
+    }
+}
 
