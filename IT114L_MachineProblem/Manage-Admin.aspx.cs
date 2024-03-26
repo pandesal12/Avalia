@@ -24,7 +24,9 @@ namespace IT114L_MachineProblem
                         while (reader.Read()) {
                             string title = reader["title"].ToString();
                             string imagePath = reader["imagePath"].ToString();
-                            string price = reader["price"].ToString();
+                            decimal priceValue = (decimal)reader["price"];
+                            string price = priceValue.ToString("N2");
+
 
                             string movieHtml = $@"
                         <ul class='TopGun'>
@@ -32,7 +34,7 @@ namespace IT114L_MachineProblem
                                 <img src='{imagePath}' alt='{title} Poster' class='posterImage'>
                             </li>
                             <li><a>{title}</a></li>
-                            <li><a>{price}</a></li>
+                            <li><a>₱{price}</a></li>
                             <li><a href='#'>Edit</a></li>
                             <li><a href='#'>Remove</a></li>
                         </ul>

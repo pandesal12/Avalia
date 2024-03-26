@@ -1,1 +1,335 @@
-﻿Testing Buggy push to repo!
+﻿ <!--Sample postbox1-->
+            <div class="post-box fantasy adventure">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/damsel.jpg" alt="movie1" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 50m</span>
+                            <a href="#">Damsel</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Fantasy</a>,&nbsp;<a href="#">Adventure</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox2-->
+            <div class="post-box action thriller">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/lightsout.jpg" alt="movie2" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 26m</span>
+                            <a href="#">Lights Out</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,&nbsp;<a href="#">Thriller</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox3-->
+            <div class="post-box romance">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/mynameislohkiwan.jpg" alt="movie3" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 13m</span>
+                            <a href="#">My Name is Loh Kiwan</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox4-->
+            <div class="post-box action sport">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/60mins.jpg" alt="movie4" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 28m</span>
+                            <a href="#">Sixty Minutes</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,&nbsp;<a href="#">Sport</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox5-->
+            <div class="post-box comedy adventure">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/orionandthedark.jpg" alt="movie5" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 30m</span>
+                            <a href="#">Orion and the Dark</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Comedy</a>,&nbsp;<a href="#">Adventure</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox6-->
+            <div class="post-box comedy romance">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/upgraded.jpg" alt="movie6" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 44m</span>
+                            <a href="#">Upgraded</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Comedy</a>,&nbsp;<a href="#">Romance</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox7-->
+            <div class="post-box action sci-fi">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/transformers.jpg" alt="movie7" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 7m</span>
+                            <a href="#">Transformers: Rise of the Beasts</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,&nbsp;<a href="#">Sci-fi</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox8-->
+            <div class="post-box action adventure fantasy">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/themarvels.jpeg" alt="movie8" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 45m</span>
+                            <a href="#">The Marvels</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,&nbsp;<a href="#">Adventure</a>,&nbsp;<a href="#">Fantasy</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox9-->
+            <div class="post-box horror">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/theexorcist.jpg" alt="movie9" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 1m</span>
+                            <a href="#">The Exorcist: Believer</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Horror</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox10-->
+            <div class="post-box adventure comedy fantasy">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/barbie.jpg" alt="movie10" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 54m</span>
+                            <a href="#">Barbie</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Adventure</a>,&nbsp;<a href="#">Comedy</a>,&nbsp;<a href="#">Fantasy</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox11-->
+            <div class="post-box horror mystery thriller">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/thenun2.jpg" alt="movie11" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 50m</span>
+                            <a href="#">The Nun II</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Horror</a>,&nbsp;<a href="#">Mystery</a>,&nbsp;<a href="#">Thriller</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox12-->
+            <div class="post-box horror mystery thriller">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/insidious.jpg" alt="movie12" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 47m</span>
+                            <a href="#">Insidious: The Red Door</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Horror</a>,&nbsp;<a href="#">Mystery</a>,&nbsp;<a href="#">Thriller</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox13-->
+            <div class="post-box adventure family fantasy">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/thelittlemermaid.jpg" alt="movie13" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 15m</span>
+                            <a href="#">The Little Mermaid</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Adventure</a>,&nbsp;<a href="#">Family</a>,&nbsp;<a href="#">Fantasy</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox14-->
+            <div class="post-box comedy romance">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/youpeople.jpg" alt="movie14" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1h 58m</span>
+                            <a href="#">You People</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Comedy</a>,&nbsp;<a href="#">Romance</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox15-->
+            <div class="post-box action adventure drama">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie15" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 38m</span>
+                            <a href="#">The Hunger Games: The Ballad of Songbirds & Snakes</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,&nbsp;<a href="#">Adventure</a>,&nbsp;<a href="#">Drama</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!--Sample postbox16-->
+            <div class="post-box horror drama">
+                <div class="post-img">
+                    <asp:Image runat="server" ImageUrl="/front-end/images/hunger.jpg" alt="movie16" />
+                </div>
+                <div class="main-slider-text">
+                    <span class="status">Now Showing</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2h 25m</span>
+                            <a href="#">Hunger</a>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Horror</a>,&nbsp;<a href="#">Drama</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
