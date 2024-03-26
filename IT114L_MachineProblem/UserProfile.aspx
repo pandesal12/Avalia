@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="IT114L_MachineProblem.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints-user.css") %>" />
+   <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/profile-user.css") %>" />
 </asp:Content>
 

@@ -273,14 +273,14 @@ header ul {
 
 #dashed-wave {
     fill: none;
-    stroke: var(--nav-color);           
+    stroke: var(--nav-color);
     stroke-width: 1px;
     stroke-dasharray: 6.5;
     opacity: 0.8;
 }
 
 
-.form-heading a{
+.form-heading a {
     color: white;
     font-weight: 600;
     text-decoration: underline;
@@ -291,4 +291,6 @@ header ul {
     color: rgb(147, 35, 35);
 }
 
-
+.Newcontainer {
+    display: none;
+}

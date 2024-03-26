@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Homepage-User.aspx.cs" Inherits="IT114L_MachineProblem.Homepage_User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints-user.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/homepage-user.css") %>" />
 </asp:Content>
 
@@ -95,11 +95,6 @@
                 <asp:Image runat="server" ImageUrl="/front-end/images/godzilla_1.jpg" alt="itemlist2" />
                 <div class="content"><div class="title">Godzilla x Kong: The New Empire</div></div>
             </div>
-        </div>
-        <!--arrows-->
-        <div class="arrows">
-            <button id="prev">&laquo;</button>
-            <button id="next">&raquo;</button>
         </div>
         <div class="time"></div>
     </div>

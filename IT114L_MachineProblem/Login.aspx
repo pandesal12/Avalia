@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="/front-end/logSign.css" />
+    <link rel="stylesheet" href="/front-end/styles/logSign.css" />
+    <link rel="stylesheet" href="/front-end/styles/breakpoints.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -70,6 +71,25 @@
                     </div>
                 </div>
             </section>
+            <div class="Newcontainer">
+                <div class="form-wrapper">
+                    <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
+                    <asp:Panel ID="Panel1" runat="server">
+                        <div class="form-control">
+                           <asp:TextBox runat="server" CssClass="input-field" ID="TextBox3" AutoCompleteType="Disabled" required=""/>
+                           <label>Username</label>
+                        </div>
+                        <div class="form-control">
+                            <asp:TextBox runat="server" CssClass="input-field" ID="TextBox4" TextMode="Password" AutoCompleteType="Disabled" required=""/>
+                            <label>Password</label>
+                        </div>
+                        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSubmit_Click"/>
+                    </asp:Panel>
+                    <asp:Panel ID="Panel2" runat="server" Visible="false">
+                    </asp:Panel>
+                    <p id="accountSign">Don't have an account? <a href="Signup.aspx" id="signup-link">Sign up</a></p>
+                </div>
+            </div>
         </main>
     </form>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
