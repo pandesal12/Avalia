@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AvaliaDB.mdf" />
+    <Content Include="App_Data\AvaliaDB_log.ldf">
+      <DependentUpon>AvaliaDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Dashboard-Admin.aspx" />
     <Content Include="front-end\admin-script.js" />
     <Content Include="front-end\createAccount.js" />
