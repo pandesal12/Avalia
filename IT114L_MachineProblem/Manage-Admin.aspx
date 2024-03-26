@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     <div class="manageMovie">
         <h2>Manage Movie List</h2>
-        <div class="addMovie">Add a New Movie</div>
+        <a href="NewMovie.aspx" class="addMovie">Add a New Movie</a>
         <ul class="movieModify">
             <li><a>Poster</a></li>
             <li><a>Movie Title</a></li>
@@ -16,7 +16,7 @@
             <li><a>Modify</a></li>
             <li><a>Remove</a></li>
         </ul>
-        <div class="movieList">
+        <div runat="server" id="movieList" class="movieList">
             <ul class="TopGun">
                 <li>
                     <img src="/front-end/images/topgun.jpg" alt="Top Gun: Maverick Poster" class="posterImage" />

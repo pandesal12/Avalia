@@ -26,17 +26,27 @@ namespace IT114L_MachineProblem
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
 
-                string checkUsernameQuery = $"SELECT COUNT(*) FROM ACCOUNTS WHERE username = '{txtUsername.Text}' and password = '{txtPassword.Text}'";
+                string checkUsernameQuery = $"SELECT * FROM ACCOUNTS WHERE username = '{txtUsername.Text}' and password = '{txtPassword.Text}'";
                 using (SqlCommand checkUsernameCmd = new SqlCommand(checkUsernameQuery, conn)) {
-                    int existingUserCount = (int)checkUsernameCmd.ExecuteScalar();
 
-                    if (existingUserCount == 0) {
-                        Response.Write("<script>alert('Wrong Username or Password!')</script>");
-                        return;
-                    } else {
-                        Session["logged"] = txtUsername.Text;
-                        Response.Redirect("Homepage-User.aspx");
+                    using (SqlDataReader reader = checkUsernameCmd.ExecuteReader()) {
+                        if (reader.HasRows) {
+                            Session["logged"] = txtUsername.Text;
+                            
+
+                            while (reader.Read()) { 
+                                if ((bool)reader["isAdmin"]) {
+                                    Response.Redirect("Dashboard-Admin.aspx");
+                                } else {
+                                    Response.Redirect("Homepage-User.aspx");
+                                }
+                            }
+                        } else {
+                            Response.Write("<script>alert('Wrong Username or Password!')</script>");
+                            return;
+                        }
                     }
+
                 }
 
             };
@@ -44,3 +54,16 @@ namespace IT114L_MachineProblem
         }
     }
 }
+
+//string checkUsernameQuery = $"SELECT COUNT(*) FROM ACCOUNTS WHERE username = '{txtUsername.Text}' and password = '{txtPassword.Text}'";
+//using (SqlCommand checkUsernameCmd = new SqlCommand(checkUsernameQuery, conn)) {
+//    int existingUserCount = (int)checkUsernameCmd.ExecuteScalar();
+
+//    if (existingUserCount == 0) {
+//        Response.Write("<script>alert('Wrong Username or Password!')</script>");
+//        return;
+//    } else {
+//        Session["logged"] = txtUsername.Text;
+//        Response.Redirect("Homepage-User.aspx");
+//    }
+//}

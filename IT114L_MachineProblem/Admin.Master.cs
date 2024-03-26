@@ -11,7 +11,7 @@ namespace IT114L_MachineProblem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            user_name2.InnerText = (string)Session["logged"];
         }
     }
 }

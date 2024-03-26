@@ -38,13 +38,13 @@
                             <div class="signup-form">
 
                                 <div class="input-wrap w-70">
-                                    <asp:TextBox runat="server" CssClass="input-field" ID="txtUsername" AutoCompleteType="Disabled" required=""/>
+                                    <asp:TextBox runat="server" CssClass="input-field" ID="txtUsername" AutoCompleteType="Disabled"/>
                                     <label>Username</label>
                                     <i class="icon fa-solid fa-user"></i>     
                                 </div>
 
                                 <div class="input-wrap w-70">
-                                    <asp:TextBox runat="server" CssClass="input-field" ID="txtPassword" TextMode="Password" AutoCompleteType="Disabled" required=""/>
+                                    <asp:TextBox runat="server" CssClass="input-field" ID="txtPassword" TextMode="Password" AutoCompleteType="Disabled"/>
                                     <label>Password</label>
                                     <i class="icon fa-solid fa-lock"></i>     
                                 </div>
@@ -76,14 +76,14 @@
                     <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
                     <asp:Panel ID="Panel1" runat="server">
                         <div class="form-control">
-                           <asp:TextBox runat="server" CssClass="input-field" ID="TextBox3" AutoCompleteType="Disabled" required=""/>
+                           <asp:TextBox runat="server" CssClass="input-field" ID="TextBox3" AutoCompleteType="Disabled"/>
                            <label>Username</label>
                         </div>
                         <div class="form-control">
-                            <asp:TextBox runat="server" CssClass="input-field" ID="TextBox4" TextMode="Password" AutoCompleteType="Disabled" required=""/>
+                            <asp:TextBox runat="server" CssClass="input-field" ID="TextBox4" TextMode="Password" AutoCompleteType="Disabled"/>
                             <label>Password</label>
                         </div>
-                        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSubmit_Click"/>
+                        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSignUp_Click"/>
                     </asp:Panel>
                     <asp:Panel ID="Panel2" runat="server" Visible="false">
                     </asp:Panel>

@@ -113,6 +113,7 @@
     <Content Include="front-end\styles\movie-user.css" />
     <Content Include="front-end\styles\profile-user.css" />
     <Content Include="front-end\styles\schedule-user.css" />
+    <Content Include="front-end\styles\newmovie.css" />
     <Content Include="front-end\user-script.js" />
     <Content Include="Homepage-User.aspx" />
     <Content Include="Manage-Admin.aspx" />
@@ -124,6 +125,7 @@
     <Content Include="testSite.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
+    <Content Include="NewMovie.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.Master.cs">
@@ -204,6 +206,13 @@
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewMovie.aspx.cs">
+      <DependentUpon>NewMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewMovie.aspx.designer.cs">
+      <DependentUpon>NewMovie.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.Master" />
@@ -216,7 +225,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Uploads\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

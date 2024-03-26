@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem
-{
+namespace IT114L_MachineProblem {
 
 
-    public partial class Admin
-    {
+    public partial class Admin {
 
         /// <summary>
         /// head control.
@@ -31,6 +29,15 @@ namespace IT114L_MachineProblem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// user_name2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl user_name2;
 
         /// <summary>
         /// ChangeContent control.
