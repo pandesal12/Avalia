@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" href="/front-end/styles/logSign.css" />
+    <link rel="stylesheet" href="/front-end/styles/breakpoints.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -77,8 +78,33 @@
                 </div>
             </section>
         </main>
+        <div class="Newcontainer">
+            <div class="form-wrapper">
+                <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
+                <asp:Panel ID="Panel1" runat="server">
+                    <div class="form-control">
+                       <asp:TextBox ID="TextBox1" runat="server" CssClass="input-field" AutoCompleteType="Disabled" required="" />
+                        <label>Username</label>
+                    </div>
+                    <div class="form-control">
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="input-field" TextMode="Password" AutoCompleteType="Disabled" required="" />
+                        <label>Password</label>
+                    </div>
+                    <div class="form-control">
+                        <asp:TextBox runat="server" CssClass="input-field" ID="TextBox3" TextMode="Password" AutoCompleteType="Disabled" required=""/>
+                        <label>Confirm Password</label> 
+                    </div>
+                    <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSubmit_Click"/>
+                </asp:Panel>
+                <asp:Panel ID="Panel2" runat="server" Visible="false">
+                </asp:Panel>
+                <p id="accountSign">Already have an account? <a href="Login.aspx" id="signup-link">Sign in</a></p>
+            </div>
+        </div>
+
     </form>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
         <script src="front-end/createAccount.js"></script>
 </body>
 </html>
+
