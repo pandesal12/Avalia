@@ -21,7 +21,7 @@ namespace IT114L_MachineProblem
             Uri url = Request.Url;
             urlTitle = Request.QueryString["title"];
             movieID = 0;
-            var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
+            var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
 
 
             using (SqlConnection conn = new SqlConnection(connString)) {
@@ -65,7 +65,7 @@ namespace IT114L_MachineProblem
             return $"{hours}h {minutes}m";
         }
         private void ReloadSeats() {
-            var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
+            var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
@@ -88,7 +88,7 @@ namespace IT114L_MachineProblem
         [WebMethod]
         public static string updateData(string a, string username, string schedID) {
             try {
-                var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
+                var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
                 //var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString)) {
                     conn.Open();
