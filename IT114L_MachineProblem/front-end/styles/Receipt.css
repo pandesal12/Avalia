@@ -1,0 +1,58 @@
+﻿body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.receipt-container {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.receipt-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.receipt-heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.receipt-details {
+    margin-top: 20px;
+}
+
+.receipt-details p.movieName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.receipt-details p.seats,
+.receipt-details p.venue,
+.receipt-details p.dateShowing,
+.receipt-details p.timeShowing,
+.receipt-details p.amount,
+.receipt-details p.purchasedOn {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.receipt-details p.separator {
+    text-align: center;
+    width: 100%;
+}
+
+.receipt-details p.separator::before,
+.receipt-details p.separator::after {
+    content: "-----------------------------------------------";
+    color: #ccc;
+}

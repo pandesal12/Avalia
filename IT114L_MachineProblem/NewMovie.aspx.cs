@@ -9,9 +9,25 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace IT114L_MachineProblem {
-    public partial class WebForm1 : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
+    public partial class NewMovie : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                string[] genres = { "Action", "Adventure", "Comedy", "Drama", "Family", "Fantasy", "History", "Horror", "Mystery", "Romance", "Sci-Fi", "Sport", "Thriller" };
+                foreach (string genre in genres)
+                {
+                    ListItem item = new ListItem(genre, genre);
+                    cblGenres.Items.Add(item);
+                }
 
+                cblGenres.RepeatColumns = 3;
+
+                foreach (ListItem listItem in cblGenres.Items)
+                {
+                    listItem.Attributes["style"] = "margin-right: 10px";
+                }
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e) {

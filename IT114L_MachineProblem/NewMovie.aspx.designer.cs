@@ -7,10 +7,30 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem {
+namespace IT114L_MachineProblem
+{
 
 
-    public partial class WebForm1 {
+    public partial class NewMovie
+    {
+
+        /// <summary>
+        /// imgPreview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgPreview;
+
+        /// <summary>
+        /// FileUpload1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
         /// TextBox1 control.
@@ -58,13 +78,13 @@ namespace IT114L_MachineProblem {
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
-        /// FileUpload1 control.
+        /// cblGenres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.CheckBoxList cblGenres;
 
         /// <summary>
         /// Button1 control.
@@ -74,14 +94,5 @@ namespace IT114L_MachineProblem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// cblGenres control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cblGenres;
     }
 }

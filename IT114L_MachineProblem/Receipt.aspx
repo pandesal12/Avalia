@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="IT114L_MachineProblem.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="IT114L_MachineProblem.Receipt" %>
 <asp:Content ID="Content" ContentPlaceHolderID="ContentSection" runat="server">
     <link href="front-end/Receipt.css" rel="stylesheet" />
     <div class="receipt-container">
