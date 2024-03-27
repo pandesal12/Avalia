@@ -44,14 +44,18 @@ body {
     position: center;
     font-size: 45px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .addMovie {
+    display: block;
     background-color: #fff;
     color: #151111;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 25px;
+    padding: 15px 10% 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align:center;
+    border-radius: 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -63,18 +67,17 @@ body {
 
 .movieModify {
     list-style: none;
-    padding: 10px 20px;
+    padding: 10px 20px 0px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ccc;
 }
 
 .movieModify li {
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-.movieModify li:last-child {
-    margin-right: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .movieModify li a {
@@ -84,25 +87,24 @@ body {
 }
 
 .movieList {
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: #3c3c3c;
 }
 
 .TopGun {
+    align-items: center;
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
+    background-color: #3C3C3C;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 .movieList li {
-    margin-right: 15px;
     color: #fff;
-}
-
-.movieList li:last-child {
-    margin-right: 0;
+    margin-right: 25px;
 }
 
 .movieList a {
@@ -114,9 +116,8 @@ body {
 }
 
 .posterImage {
-    width: 5rem;
-    height: auto;
+    width: 4.5rem;
+    height: 80px;
     display: block;
-    margin-bottom: 10px;
+    border-radius: 20px 0 0 20px;
 }
-

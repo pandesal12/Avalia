@@ -33,9 +33,9 @@
         padding: 15px 100px;
     }
 
-    .nav .search-box {
-        right: 150px;
-    }
+        .nav .search-box {
+            right: 150px;
+        }
 
     /* MAIN CONTENT*/
     #now-showing {
@@ -76,10 +76,10 @@
         padding: 15px 50px;
     }
 
-    .nav .search-box {
-        right: 100px;
-        max-width: 400px;
-    }
+        .nav .search-box {
+            right: 100px;
+            max-width: 400px;
+        }
 
     .post-container {
         grid-template-columns: 1fr 1fr;
@@ -107,49 +107,49 @@
         padding: 15px 25px;
     }
 
-    .nav .nav-links {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        height: 100%;
-        max-width: 280px;
-        width: 100%;
-        padding-top: 100px;
-        row-gap: 30px;
-        flex-direction: column;
-        backdrop-filter: blur(5px);
-        background-color: var(--navbar-background-transparent-color);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s ease;
-        z-index: 100;
-    }
+        .nav .nav-links {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            max-width: 280px;
+            width: 100%;
+            padding-top: 100px;
+            row-gap: 30px;
+            flex-direction: column;
+            backdrop-filter: blur(5px);
+            background-color: var(--navbar-background-transparent-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            z-index: 100;
+        }
 
-    .nav.openNav .nav-links {
-        left: 0;
-    }
+        .nav.openNav .nav-links {
+            left: 0;
+        }
 
-    .nav .navOpenBtn {
-        color: var(--light-text-color);
-        font-size: 20px;
-        cursor: pointer;
-    }
+        .nav .navOpenBtn {
+            color: var(--light-text-color);
+            font-size: 20px;
+            cursor: pointer;
+        }
 
-    .nav .navCloseBtn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: var(--light-text-color);
-        font-size: 20px;
-        cursor: pointer;
-    }
+        .nav .navCloseBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--light-text-color);
+            font-size: 20px;
+            cursor: pointer;
+        }
 
-    .nav .search-box {
-        top: calc(100% + 10px);
-        max-width: calc(100% - 20px);
-        right: 50%;
-        transform: translateX(50%);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        .nav .search-box {
+            top: calc(100% + 10px);
+            max-width: calc(100% - 20px);
+            right: 50%;
+            transform: translateX(50%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
     .userprofile {
         display: flex;
@@ -180,9 +180,9 @@
         padding-right: 0;
     }
 
-    .carousel .list .item .content .title {
-        font-size: 30px;
-    }
+        .carousel .list .item .content .title {
+            font-size: 30px;
+        }
 
     /* PROFILE */
     .profile-container .table_body label {
@@ -248,12 +248,12 @@
         transition: all 0.3s ease;
     }
 
-    .moviereviews-container .nav-movies .btnSeats {
-        margin: 0 auto;
-        padding: 12px;
-        width: 100%;
-        font-weight: 700;
-    }
+        .moviereviews-container .nav-movies .btnSeats {
+            margin: 0 auto;
+            padding: 12px;
+            width: 100%;
+            font-weight: 700;
+        }
 
     .form-review .textarea textarea {
         width: 150px;
@@ -450,5 +450,37 @@
 @media screen and (max-width: 500px) {
     .image-wrapper .img {
         display: none;
+    }
+}
+
+/*Manage Movie List*/
+@media screen and (max-width: 790px) {
+    .manageMovie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addMovie {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .movieModify li:nth-child(2) a {
+        visibility: hidden;
+    }
+
+        .movieModify li:nth-child(2) a::before {
+            visibility: visible;
+            content: "Title";
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+    .movieModify li {
+        margin-bottom: 0px;
+        height: 20px
     }
 }
