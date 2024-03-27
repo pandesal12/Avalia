@@ -14,20 +14,64 @@ namespace IT114L_MachineProblem
 {
     public partial class Schedule_User : System.Web.UI.Page
     {
+        public string urlTitle;
+        public int movieID;
         protected void Page_Load(object sender, EventArgs e) {
+            //DropDownList1.Items.Add(new ListItem("3:00PM - 6:05PM", "time1"));
+            Uri url = Request.Url;
+            urlTitle = Request.QueryString["title"];
+            movieID = 0;
+            var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
+
+
+            using (SqlConnection conn = new SqlConnection(connString)) {
+                conn.Open();
+
+                string getMovieID= $"SELECT * FROM movie join schedule on schedule.movieID = movie.movieID where title = '{urlTitle}'";
+                using (SqlCommand cmd = new SqlCommand(getMovieID, conn)) {
+                    using (SqlDataReader reader = cmd.ExecuteReader()) {
+                        while (reader.Read()) {
+                            movieID = (int)reader["movieID"];
+                            decimal priceValue = (decimal)reader["price"];
+                            string price = "₱" + priceValue.ToString("N2");
+                            ticketprice_label.InnerText = price;
+                            movie_name.InnerText = (string)reader["title"];
+                            duration_label.InnerText = timeConverter(float.Parse(reader["duration"].ToString()));
+                            string scheduleTime = reader["scheduleTime"].ToString();
+                            string scheduleID = reader["scheduleID"].ToString();
+                            imageMovie.ImageUrl = reader["imagePath"].ToString();
+                            //Response.Write($"aaaaaaaaa:{reader["image"].ToString()}");
+                            DropDownList1.Items.Add(new ListItem($"{scheduleTime}", $"{scheduleID}"));
+
+                            
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
             ReloadSeats();
             Label name = Master.FindControl("user_name2") as Label;
 
             //userLoggedIn.InnerText = name.Text;
         }
-
+        public string timeConverter(float decimalValue) {
+            int hours = (int)decimalValue;
+            int minutes = (int)((decimalValue - hours) * 60);
+            return $"{hours}h {minutes}m";
+        }
         private void ReloadSeats() {
             var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
-
-                string recordSeats = "SELECT seatNumber FROM Booking";
+                //Response.Write($"AAAAAAAAAAAAAAAAAAA: {DropDownList1.Value}");
+                
+                string recordSeats = $"SELECT seatNumber FROM Booking where scheduleID = { int.Parse(DropDownList1.Value) }";
                 using (SqlCommand cmd = new SqlCommand(recordSeats, conn)) {
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
                         StringBuilder seatNumbers = new StringBuilder();
@@ -41,12 +85,8 @@ namespace IT114L_MachineProblem
             }
         }
 
-        protected void bookSeats_Click(object sender, EventArgs e) {
-            //updatePanel.Update();
-            //Response.Write($"<script>alert({selectedSeatsData.InnerText})</script>");
-        }
         [WebMethod]
-        public static string updateData(string a, string username) {
+        public static string updateData(string a, string username, string schedID) {
             try {
                 var connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
                 //var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True;";
@@ -65,9 +105,8 @@ namespace IT114L_MachineProblem
                         userID = Convert.ToInt32(result);
                     }
 
-
                     foreach (string s in seats) {
-                        string recordSeats = $"INSERT INTO Booking (userID, ScheduleID, seatNumber) VALUES ({userID}, 2, '{s}')";
+                        string recordSeats = $"INSERT INTO Booking (userID, ScheduleID, seatNumber) VALUES ({userID}, {int.Parse(schedID)}, '{s}')";
                         using (SqlCommand checkUsernameCmd = new SqlCommand(recordSeats, conn)) {
                             int affectedRows = checkUsernameCmd.ExecuteNonQuery();
 

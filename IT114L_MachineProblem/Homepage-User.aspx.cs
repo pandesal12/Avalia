@@ -12,6 +12,7 @@ namespace IT114L_MachineProblem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Github Repos\Avalia\IT114L_MachineProblem\App_Data\AvaliaDB.mdf"";Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();

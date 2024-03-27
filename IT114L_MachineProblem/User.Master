@@ -31,7 +31,7 @@
                 <i class="uil uil-times navCloseBtn"></i>
                 <a href="Homepage-User.aspx">Home</a>
                 <a href="Movies-User.aspx">Movies</a>
-                <a href="Schedule-User.aspx">Schedule</a>
+<%--                <a href="Schedule-User.aspx">Schedule</a>--%>
                 <!--User-Profile-->
                 <div class="userprofile">
                         <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />

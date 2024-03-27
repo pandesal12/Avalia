@@ -123,8 +123,10 @@ function handleSeatClick() {
 
 }
 
+
+
 function executeSubmit() {
-    event.preventDefault();
+    event.preventDefault(); //remove this
     const hiddenField = document.querySelector(".HiddenFieldDataHere");
     //const hiddenField2 = document.querySelector(".HiddenFieldDataHere2");
 
@@ -132,12 +134,15 @@ function executeSubmit() {
     var username = parentWindow.document.getElementById('user_name2');
 
 
+    var dropdownList = document.querySelector(".dropDownSelect");
+    console.log(dropdownList);
+    
     var str = hiddenField.innerHTML;
 /*    var username = hiddenField2.innerHTML;*/
     $.ajax({
         type: "POST",
         url: "Schedule-User.aspx/updateData",
-        data: JSON.stringify({ a: str, username: username.innerText }), 
+        data: JSON.stringify({ a: str, username: username.innerText, schedID: dropdownList.value }), 
         contentType: "application/json; charset=utf-8",
         dataType: "text",
         success: function (response) {

@@ -39,35 +39,39 @@
         <div class="schedcinema-container">
             <div class="schedcinema-details">
                 <label id="backbtn">&laquo; Back</label>
-                <asp:Image runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie-display" /> <!--image can change-->
-                <label id="movie-name">Hunger Games</label>
+                <asp:Image id="imageMovie" runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie-display" /> <!--image can change-->
+                <label runat="server" id="movie_name"></label>
                 <div class="movie-details">
                     <div>
                         <label>Ticket Price</label>
-                        <label id="ticketprice-label">P2400</label>
+                        <label runat="server" id="ticketprice_label"></label>
                     </div>
                     <div class="right-align">
                         <label>Duration</label>
-                        <label id="duration-label">2hrs 2 min</label>
+                        <label runat="server" id="duration_label"></label>   
                     </div>
                 </div>
 
             </div>
             <div class="schedcinema-book">
                 <!--Location-->
-                <label>Location</label>
+                <%--<label>Location</label>--%>
                 <!--Show Time-->
                 <label>Show Time</label>
-                <select class="book-options">
+<%--                <select class="book-options">
                     <option value="time1">3:00PM - 6:05PM</option>
                     <option value="time1">6:00PM - 9:05PM</option>
-                </select>
+                </select>--%>
+
+                <select class="dropDownSelect" id="DropDownList1" runat="server"></select>
+
+
                 <!--Date-->
-                <label>Date</label>
+<%--                <label>Date</label>
                 <select class="book-options">
                     <option value="date1">March 03, 2024</option>
                     <option value="date2">March 04, 2024</option>
-                </select>
+                </select>--%>
 
                 <div class="book-details">
                     <div class="label1">
@@ -91,5 +95,5 @@
             </div>
         </div>
     </div>
-    <script src="seating-components/seatings.js"></script>
+    <script src="seating-components/seatings_code.js"></script>
 </asp:Content>
