@@ -18,7 +18,7 @@
 
         <div class="schedcinema-seating">
             
-            <link rel="stylesheet" href="seating-components/seating.css">
+            <link rel="stylesheet" href="seating-components/seatings.css">
             <div class="DivisionContainer"></div> <%--seating--%>
             <ul class="showcase">
                 <li>

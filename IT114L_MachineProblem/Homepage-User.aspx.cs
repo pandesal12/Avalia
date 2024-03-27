@@ -35,6 +35,23 @@ namespace IT114L_MachineProblem
                                     classAttribute += " " + g.Trim();
                                 }
 
+                                //reader.Close();
+
+                                string duration = "";
+                                string durationQuery = $"SELECT duration FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID where title = '{title}'";
+                                using (SqlConnection conn2 = new SqlConnection(connString)) {
+                                    conn2.Open();
+                                    using (SqlCommand durationCmd = new SqlCommand(durationQuery, conn2)) {
+                                        using (SqlDataReader durationReader = durationCmd.ExecuteReader()) {
+                                            if (durationReader.Read()) {
+                                                duration = durationReader["duration"].ToString();
+                                            }
+                                        }
+                                    }
+                                }
+
+
+
                                 string movieHtml = $@"
                                     <div class='{classAttribute}' onclick=""redirectToSchedule('{title}')"">
                                         <div class='post-img'>
@@ -44,7 +61,7 @@ namespace IT114L_MachineProblem
                                             <span class='status'>Now Showing</span>
                                             <div class='bottom-text'>
                                                 <div class='movie-name'>
-                                                    <span>1h 50m</span>
+                                                    <span>{timeConverter(float.Parse(duration))}</span>
                                                     <a href='#'>{title}</a>
                                                 </div>
                                                 <div class='category-rating'>
@@ -57,11 +74,19 @@ namespace IT114L_MachineProblem
                                     </div>
                                 ";
                                 postContainer.InnerHtml += movieHtml;
+
+                                
                             }
                         } 
                     }
                 }
             }
+        }
+
+        public string timeConverter(float decimalValue) {
+            int hours = (int)decimalValue;
+            int minutes = (int)((decimalValue - hours) * 60);
+            return $"{hours}h {minutes}m";
         }
     }
 }
