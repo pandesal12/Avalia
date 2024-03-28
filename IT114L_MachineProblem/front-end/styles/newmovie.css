@@ -25,7 +25,6 @@ div#ChangeContent {
 }
 
 .uploadContainer {
-    margin: 30px, 100px;
     display: flex;
     justify-content: start;
     text-align: center;
@@ -49,9 +48,9 @@ div#ChangeContent {
 }
 
 .textBoxContainer {
-    margin: 10px 10px;
+    margin: 10px;
     display: flex;
-    width: 500px;
+    width: 100%;
 }
 
 .formContainer {
