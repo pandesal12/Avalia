@@ -43,9 +43,11 @@ namespace IT114L_MachineProblem
                                 string durationQuery = "SELECT duration FROM Schedule JOIN MOVIE ON schedule.movieID = movie.movieID WHERE title = @Title";
                                 using (SqlConnection conn2 = new SqlConnection(connString)) {
                                     conn2.Open();
+                                    
                                     using (SqlCommand durationCmd = new SqlCommand(durationQuery, conn2)) {
+                                        durationCmd.Parameters.AddWithValue("@Title", title);
                                         using (SqlDataReader durationReader = durationCmd.ExecuteReader()) {
-                                            cmd.Parameters.AddWithValue("@Title", title);
+                                            
                                             if (durationReader.Read()) {
                                                 duration = durationReader["duration"].ToString();
                                             }
