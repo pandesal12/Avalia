@@ -18,7 +18,7 @@
 
         <div class="schedcinema-seating">
             
-            <link rel="stylesheet" href="seating-components/seatings.css">
+            <link rel="stylesheet" href="seating-components/seatings_Style.css">
             <div class="DivisionContainer"></div> <%--seating--%>
             <ul class="showcase">
                 <li>
@@ -38,9 +38,9 @@
         </div>
         <div class="schedcinema-container">
             <div class="schedcinema-details">
-                <label id="backbtn">&laquo; Back</label>
+<%--                <label id="backbtn">&laquo; Back</label>--%>
                 <asp:Image id="imageMovie" runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie-display" /> <!--image can change-->
-                <label runat="server" id="movie_name"></label>
+                <label style="margin-left: 20px" runat="server" id="movie_name"></label>
                 <div class="movie-details">
                     <div>
                         <label>Ticket Price</label>
@@ -84,8 +84,9 @@
                     <div class="label3">
                         <label>Available: </label><label class="availableSeats"></label>
                     </div>
+                    <button class="btnSeats" onclick="executeSubmit()">Book Seats</button>
                 </div>
-                <button class="btnSeats" onclick="executeSubmit()">Book Seats</button>
+                
                 <%--<button class="btnSeats" onclick="showSelected(event)">Book Seats</button>--%>
 
                <%--<asp:Button ID="bookSeats" runat="server" Text="Book Seats" CssClass="btnSeats" OnClick="bookSeats_Click"/>--%>

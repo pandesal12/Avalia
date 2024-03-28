@@ -108,7 +108,7 @@
     <Content Include="front-end\styles\BookingAndPayment.css" />
     <Content Include="front-end\styles\breakpoints.css" />
     <Content Include="front-end\styles\dashboard-admin.css" />
-    <Content Include="front-end\styles\homepage-user.css" />
+    <Content Include="front-end\styles\homepage_user.css" />
     <Content Include="front-end\styles\manage-admin.css" />
     <Content Include="front-end\styles\masterpage.css" />
     <Content Include="front-end\styles\movie-user.css" />
