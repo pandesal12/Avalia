@@ -57,6 +57,27 @@ namespace IT114L_MachineProblem
 
 
 
+                                //string movieHtml = $@"
+                                //    <div class='{classAttribute}' onclick=""redirectToSchedule('{title}')"">
+                                //        <div class='post-img'>
+                                //            <img alt='{title}' src='{imagePath}'>
+                                //        </div>
+                                //        <div class='main-slider-text'>
+                                //            <span class='status'>Now Showing</span>
+                                //            <div class='bottom-text'>
+                                //                <div class='movie-name'>
+                                //                    <span>{timeConverter(float.Parse(duration))}</span>
+                                //                    <a href='#'>{title}</a>
+                                //                </div>
+                                //                <div class='category-rating'>
+                                //                    <div class='category'>
+                                //                        <a href='#'>{genre}</a>
+                                //                    </div>
+                                //                </div>
+                                //            </div>
+                                //        </div>
+                                //    </div>
+                                //";
                                 string movieHtml = $@"
                                     <div class='{classAttribute}' onclick=""redirectToSchedule('{title}')"">
                                         <div class='post-img'>

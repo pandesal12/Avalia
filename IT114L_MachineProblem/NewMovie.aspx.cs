@@ -62,24 +62,7 @@ namespace IT114L_MachineProblem {
                 conn.Open();
 
 
-                //string insertMovie = $"INSERT INTO Movie (title, description, genre, imagePath, price) VALUES ('{title}', '{description}', '{genre}', '{imgPath}', {double.Parse(price)})"; //para
-                //using (SqlCommand cmd = new SqlCommand(insertMovie, conn)) {
-                //    int affectedRows = cmd.ExecuteNonQuery();
-
-                //    // Get the newly inserted movie's ID
-                //    cmd.CommandText = "SELECT SCOPE_IDENTITY()";
-                //    object movieIdObj = cmd.ExecuteScalar();
-                //    if (movieIdObj != null && int.TryParse(movieIdObj.ToString(), out int newMovieId)) {
-                //        int movieID = newMovieId;
-
-                //        string insertSchedule = $"INSERT INTO SCHEDULE (scheduleTime, duration, movieID, CinemaRoom) VALUES ('{date}', '{duration}', '{movieID}', 1)";
-                //        using (SqlCommand cmdSchedule = new SqlCommand(insertSchedule, conn)) {
-                //            affectedRows = cmdSchedule.ExecuteNonQuery();
-                //        }
-                //    } 
-                //}
-
-                string insertMovie = "INSERT INTO Movie (title, description, genre, imagePath, price) VALUES (@Title, @Description, @Genre, @ImagePath, @Price)";
+                string insertMovie = "INSERT INTO Movie (title, description, genre, imagePath, price) VALUES (@Title, @Description, @Genre, @ImagePath, @Price); SELECT SCOPE_IDENTITY();";
                 using (SqlCommand cmd = new SqlCommand(insertMovie, conn)) {
                     cmd.Parameters.AddWithValue("@Title", title);
                     cmd.Parameters.AddWithValue("@Description", description);
@@ -87,21 +70,17 @@ namespace IT114L_MachineProblem {
                     cmd.Parameters.AddWithValue("@ImagePath", imgPath);
                     cmd.Parameters.AddWithValue("@Price", double.Parse(price));
 
-                    int affectedRows = cmd.ExecuteNonQuery();
+                    int movieID = Convert.ToInt32(cmd.ExecuteScalar());
 
-                    cmd.CommandText = "SELECT SCOPE_IDENTITY()";
-                    object movieIdObj = cmd.ExecuteScalar();
-                    if (movieIdObj != null && int.TryParse(movieIdObj.ToString(), out int newMovieId)) {
-                        int movieID = newMovieId;
+                    string insertSchedule = "INSERT INTO SCHEDULE (scheduleTime, duration, movieID, CinemaRoom) VALUES (@ScheduleTime, @Duration, @MovieID, 1)";
+                    using (SqlCommand cmdSchedule = new SqlCommand(insertSchedule, conn)) {
+                        cmdSchedule.Parameters.AddWithValue("@ScheduleTime", date);
+                        cmdSchedule.Parameters.AddWithValue("@Duration", duration);
+                        cmdSchedule.Parameters.AddWithValue("@MovieID", movieID);
 
-                        string insertSchedule = "INSERT INTO SCHEDULE (scheduleTime, duration, movieID, CinemaRoom) VALUES (@Date, @Duration, @MovieID, 1)";
-                        using (SqlCommand cmdSchedule = new SqlCommand(insertSchedule, conn)) {
-                            cmdSchedule.Parameters.AddWithValue("@Date", date);
-                            cmdSchedule.Parameters.AddWithValue("@Duration", duration);
-                            cmdSchedule.Parameters.AddWithValue("@MovieID", movieID);
-                            affectedRows = cmdSchedule.ExecuteNonQuery();
-                        }
+                        cmdSchedule.ExecuteNonQuery();
                     }
+                    
                 }
             }
         }
