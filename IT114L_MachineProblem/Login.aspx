@@ -14,7 +14,7 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo">   
                             <div class="images">
                                 <img src="/front-end/images/avalia_logo.png" />
                             </div>

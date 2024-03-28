@@ -34,7 +34,7 @@ namespace IT114L_MachineProblem
 
                                 string classAttribute = "post-box";
                                 foreach (string g in genres) {
-                                    classAttribute += " " + g.Trim();
+                                    classAttribute += " " + g.Trim().ToLower();
                                 }
 
                                 //reader.Close();

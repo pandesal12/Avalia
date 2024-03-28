@@ -36,25 +36,8 @@
                         <th>Price</th>
                     </tr>
                 </thead>
-                <tbody id="pending-movies">
-                    <!--Record 1-->
-                    <tr>
-                        <td><asp:Image runat="server" ImageUrl="/front-end/images/themarvels.jpeg" alt="thumbnail-movie" /></td>
-                        <td>The Marvels</td>
-                        <td><p class="seats waiting">D1, D2, D3</p></td>
-                        <td>6PM</td>
-                        <td>3</td>
-                        <td><strong>₱2400</strong></td>
-                    </tr>
-                    <!--Record 2-->
-                    <tr>
-                        <td><asp:Image runat="server" ImageUrl="/front-end/images/transformers.jpg" alt="thumbnail-movie" /></td>
-                        <td>Transformers</td>
-                        <td><p class="seats waiting">D6, D7, D8</p></td>
-                        <td>6PM</td>
-                        <td>3</td>
-                        <td><strong>₱2400</strong></td>
-                    </tr>
+                <tbody runat="server" id="pending_movies">
+
                 </tbody>
             </table>
         </div>
