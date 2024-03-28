@@ -78,15 +78,6 @@ namespace IT114L_MachineProblem {
                         }
                     } 
                 }
-
-
-                //string insertSchedule = $"INSERT INTO SCHEDULE (scheduleTime, duration, movieID, CinemaRoom) VALUES ('{date}', '{duration}', '{movieID}', 1)";
-                //using (SqlCommand cmd = new SqlCommand(insertMovie, conn)) {
-                //    int affectedRows = cmd.ExecuteNonQuery();
-
-                //}
-
-
             }
         }
     }

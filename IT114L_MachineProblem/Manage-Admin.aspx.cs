@@ -36,7 +36,7 @@ namespace IT114L_MachineProblem
                             </li>
                             <li><a>{title}</a></li>
                             <li><a>₱{price}</a></li>
-                            <li><a href='#'>Edit</a></li>
+                            <li><a onclick=""openPopup('{title}')"">Edit</a></li>
                             <li><a href='#'>Remove</a></li>
                         </ul>
                     ";

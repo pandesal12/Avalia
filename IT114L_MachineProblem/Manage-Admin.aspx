@@ -17,15 +17,8 @@
             <li><a>Remove</a></li>
         </ul>
         <div runat="server" id="movieList" class="movieList">
-            <ul class="TopGun">
-                <li>
-                    <img src="/front-end/images/topgun.jpg" alt="Top Gun: Maverick Poster" class="posterImage" />
-                 </li>
-                <li><a>Top Gun</a></li>
-                <li><a>₱800</a></li>
-                <li><a href="#">Edit</a></li>
-                <li><a href="#">Remove</a></li>
-            </ul>
+
         </div>
     </div>
+    <script src="front-end/admin-Script.js"></script>
 </asp:Content>

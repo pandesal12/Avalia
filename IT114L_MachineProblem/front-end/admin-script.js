@@ -50,3 +50,12 @@ links.forEach(link => {
         link.classList.add('active');
     });
 });
+
+
+
+function openPopup(title) {
+    window.location.href = 'editMovie.aspx?title=' + title;
+}
+function closePopup() {
+    window.location.href = 'Manage-Admin.aspx';
+}

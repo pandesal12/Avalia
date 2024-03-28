@@ -72,7 +72,7 @@
       <DependentUpon>AvaliaDB.mdf</DependentUpon>
     </Content>
     <Content Include="Dashboard-Admin.aspx" />
-    <Content Include="front-end\admin-script.js" />
+    <Content Include="front-end\admin-Script.js" />
     <Content Include="front-end\createAccount.js" />
     <Content Include="front-end\images\60mins.jpg" />
     <Content Include="front-end\images\abigail_1.jpg" />
@@ -127,6 +127,7 @@
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
     <Content Include="NewMovie.aspx" />
+    <Content Include="editMovie.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.Master.cs">
@@ -213,6 +214,13 @@
     </Compile>
     <Compile Include="NewMovie.aspx.designer.cs">
       <DependentUpon>NewMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editMovie.aspx.cs">
+      <DependentUpon>editMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editMovie.aspx.designer.cs">
+      <DependentUpon>editMovie.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
