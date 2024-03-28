@@ -320,11 +320,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
     margin: 20px 0 auto 20px;
+    /*flex-wrap: wrap;*/
     padding: 15px;
 }
 
 .post-box {
-    width: 100%;
+    width: 200px;
     height: auto;
     overflow: hidden;
     border-radius: 20px;
@@ -418,4 +419,16 @@ body {
     width: 100%;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.tabs_wrap ul {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
