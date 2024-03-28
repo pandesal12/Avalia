@@ -650,6 +650,16 @@
     }
 
     .uploadContainer img {
-        width: 38vh;
+        width: 45vh;
     }
+
+    .moveMeDown {
+        margin-top: 100px;
+    }
+
+    .moviePreview {
+        margin-top: 610px;
+    }
+
+
 }
