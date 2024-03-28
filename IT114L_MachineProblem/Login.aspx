@@ -14,7 +14,7 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#" class="logo">   
+                        <a href="#" class="logo">
                             <div class="images">
                                 <img src="/front-end/images/avalia_logo.png" />
                             </div>
@@ -30,11 +30,13 @@
                 <div class="container">
                     <div class="left">
                         <div class="form-wrapper">
-                            <div class="form-heading">
-                                <h1>Sign in</h1>
-                                <p class="text">Don't have an account? <a href="Signup.aspx" cssclass="switch-link">Sign up</a></p>
+                            <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
+                            <div class="fhfull">
+                                <div class="form-heading">
+                                    <h1>Sign in</h1>
+                                    <p class="text">Don't have an account? <a href="Signup.aspx" cssclass="switch-link">Sign up</a></p>
+                                </div>
                             </div>
-
                             <div class="signup-form">
 
                                 <div class="input-wrap w-70">
@@ -52,8 +54,14 @@
                                 <div class="sign-btn">
                                     <asp:Button runat="server" ID="btnSignUp" Text="Sign In" CssClass="btn" OnClick="btnSignUp_Click" />
                                 </div>
-                            </div>     
+                            </div> 
+                            <div class="fh700">
+                                <div class="form-heading">
+                                    <p class="text">Don't have an account? <a href="Signup.aspx" cssclass="switch-link">Sign up</a></p>
+                                </div>
+                            </div>
                        </div>
+
                     </div>
 
                     <div class="right">
@@ -71,25 +79,6 @@
                     </div>
                 </div>
             </section>
-            <div class="Newcontainer">
-                <div class="form-wrapper">
-                    <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
-                    <asp:Panel ID="Panel1" runat="server">
-                        <div class="form-control">
-                           <asp:TextBox runat="server" CssClass="input-field" ID="TextBox3" AutoCompleteType="Disabled"/>
-                           <label>Username</label>
-                        </div>
-                        <div class="form-control">
-                            <asp:TextBox runat="server" CssClass="input-field" ID="TextBox4" TextMode="Password" AutoCompleteType="Disabled"/>
-                            <label>Password</label>
-                        </div>
-                        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="sign-btn" OnClick="btnSignUp_Click"/>
-                    </asp:Panel>
-                    <asp:Panel ID="Panel2" runat="server" Visible="false">
-                    </asp:Panel>
-                    <p id="accountSign">Don't have an account? <a href="Signup.aspx" id="signup-link">Sign up</a></p>
-                </div>
-            </div>
         </main>
     </form>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>

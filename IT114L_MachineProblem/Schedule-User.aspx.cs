@@ -27,8 +27,9 @@ namespace IT114L_MachineProblem
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
 
-                string getMovieID= $"SELECT * FROM movie join schedule on schedule.movieID = movie.movieID where title = '{urlTitle}'";
-                using (SqlCommand cmd = new SqlCommand(getMovieID, conn)) {
+                string getMovieIDQuery = "SELECT movie.movieID FROM movie JOIN schedule ON schedule.movieID = movie.movieID WHERE title = @Title";
+                using (SqlCommand cmd = new SqlCommand(getMovieIDQuery, conn)) {
+                    cmd.Parameters.AddWithValue("@Title", urlTitle);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
                         while (reader.Read()) {
                             movieID = (int)reader["movieID"];

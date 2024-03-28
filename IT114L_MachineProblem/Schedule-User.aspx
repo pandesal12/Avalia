@@ -95,5 +95,5 @@
             </div>
         </div>
     </div>
-    <script src="seating-components/seatings_code.js"></script>
+    <script src="seating-components/seatings_Code.js"></script>
 </asp:Content>

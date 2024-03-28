@@ -105,6 +105,7 @@
     <Content Include="front-end\images\transformers.jpg" />
     <Content Include="front-end\images\upgraded.jpg" />
     <Content Include="front-end\images\youpeople.jpg" />
+    <Content Include="front-end\styles\BookingAndPayment.css" />
     <Content Include="front-end\styles\breakpoints.css" />
     <Content Include="front-end\styles\dashboard-admin.css" />
     <Content Include="front-end\styles\homepage-user.css" />
@@ -128,6 +129,7 @@
     <Content Include="Web.config" />
     <Content Include="NewMovie.aspx" />
     <Content Include="editMovie.aspx" />
+    <Content Include="payment.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.Master.cs">
@@ -221,6 +223,13 @@
     </Compile>
     <Compile Include="editMovie.aspx.designer.cs">
       <DependentUpon>editMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

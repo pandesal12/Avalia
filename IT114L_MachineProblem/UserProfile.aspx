@@ -39,36 +39,5 @@
                 </tbody>
             </table>
         </div>
-        <%--<div class="table_body">
-            <label>Booking History</label>
-            <table>
-                <thead>
-                    <!--Fields-BookingHistory-->
-                    <tr>
-                        <th></th>
-                        <th>Movie Title</th>
-                        <th>Date</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody id="finished-movies">
-                    <!--Record 1-->
-                    <tr>
-                        <td><asp:Image runat="server" ImageUrl="/front-end/images/theexorcist.jpg" alt="thumbnail-movie" /></td>
-                        <td>The Exorcist</td>
-                        <td>02/21/2024</td>
-                        <td><strong>₱2400</strong></td>
-                    </tr>
-                    <!--Record 2-->
-                    <tr>
-                        <td><asp:Image runat="server" ImageUrl="/front-end/images/orionandthedark.jpg" alt="thumbnail-movie" /></td>
-                        <td>Orion and the Dark</td>
-                        <td>02/15/2024</td>
-                        <td><strong>₱2400</strong></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>--%>
     </div>
 </asp:Content>

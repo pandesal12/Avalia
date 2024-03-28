@@ -280,8 +280,109 @@
 
 /*Login Signup*/
 @media screen and (max-width: 700px) {
+
     .logo {
         display: none;
+    }
+
+    .text {
+        color: inherit;
+        line-height: inherit;
+        font-size: inherit;
+    }
+
+    .form-wrapper {
+        max-width: none;
+        max-height: none;
+    }
+
+    .signup-form {
+        display: block;
+        margin-top: inherit;
+        grid-template-columns: initial;
+        column-gap: initial;
+        row-gap: initial;
+    }
+
+    .input-wrap {
+        position: initial;
+    }
+
+        .input-wrap.w-70 {
+            grid-column: initial;
+            width: auto;
+            margin-left: initial;
+        }
+
+    .input-field {
+        width: auto;
+        background-color: inherit;
+        padding: inherit;
+        border: inherit;
+        outline: inherit;
+        font-family: inherit;
+        border-radius: inherit;
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        box-shadow: none;
+        transition: inherit;
+    }
+
+    .input-wrap label {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        color: inherit;
+        pointer-events: initial;
+        transition: initial;
+    }
+
+    .input-wrap.focus .input-field {
+        background-color: inherit;
+        border: inherit;
+        box-shadow: none;
+    }
+
+    .input-wrap.focus label {
+        color: inherit;
+    }
+
+    .input-wrap.not-empty label {
+        font-size: inherit;
+        top: inherit;
+        transform: inherit;
+    }
+
+    .btn {
+        display: inline-block;
+        width: auto;
+        margin-left: initial;
+        padding: inherit;
+        background-color: inherit;
+        margin-top: inherit;
+        color: inherit;
+        border-radius: inherit;
+        border: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        transition: inherit;
+    }
+
+        .btn:hover {
+            background-color: inherit;
+        }
+
+    .form-wrapper h1 {
+        color: #000;
+        font-size: 2rem;
+    }
+
+    .form-wrapper Panel {
+        margin: 25px 0 65px;
     }
 
     .form-wrapper {
@@ -296,82 +397,66 @@
         transform: translate(-50%, -50%);
     }
 
-        .form-wrapper h2 {
-            color: #000;
-            font-size: 2rem;
-        }
 
-        .form-wrapper Panel {
-            margin: 25px 0 65px;
-        }
-
-    form .form-control {
+    .input-wrap.w-70 {
         position: relative;
         height: 50px;
         margin-bottom: 16px;
         margin-top: 1.50rem;
     }
 
-    .form-control .input-field {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        outline: none;
-        border: none;
-        font-size: 0.80rem;
-        color: white;
-        transition: 0.4s;
-        padding: 0 20px;
-    }
+        .input-wrap.w-70 .input-field {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            outline: none;
+            border-radius: 20px;
+            font-size: 0.80rem;
+            color: white;
+            transition: 0.4s;
+            padding: 0 20px;
+        }
 
-    .form-control label {
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        color: #3F3838;
-        pointer-events: none;
-        font-size: 0.95rem;
-        transform: translateY(-50%);
-        pointer-events: none;
-        transition: 0.4s;
-    }
+        .input-wrap.w-70 label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            color: #3F3838;
+            pointer-events: none;
+            font-size: 0.95rem;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: 0.4s;
+        }
 
 
-    .form-control input:is(:focus, :valid) ~ label {
-        font-size: 0.75rem;
-        transform: translateY(-150%);
-    }
+        .input-wrap.w-70 input:is(:focus, :valid) ~ label {
+            font-size: 0.75rem;
+            transform: translateY(-150%);
+        }
 
     .sign-btn {
-        display: inline-block;
-        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
         height: 48px;
-        background: #151111;
+        background: #C20114;
         color: #fff;
         font-weight: 600;
-        border: none;
         cursor: pointer;
-        border-radius: 0.8rem;
-        margin-top: 1.75rem;
-        margin-left: 1.5rem;
-        margin-bottom: 1rem;
-        transition: 0.3s;
-        background-color: #C20114;
+        border-radius: 50px;
+        text-align: center;
+        margin: 0 auto;
     }
 
         .sign-btn:hover {
-            color: black;
+            background-color: #a20111;
         }
 
     form button:hover {
         background: #1e211e;
-    }
-
-    form .remember-me input {
-        margin-right: 5px;
-        accent-color: #333;
-        margin-top: 1rem;
     }
 
     .form-wrapper :where(label, a, p) {
@@ -396,11 +481,7 @@
             text-decoration: underline;
         }
 
-    .left {
-        display: none;
-    }
-
-    .Newcontainer {
+    .container {
         z-index: 1000;
         display: block;
         position: fixed;
@@ -414,13 +495,8 @@
     .form-wrapper {
         left: 50%;
         top: 50%;
-        border: none;
         background: none;
     }
-
-        .form-wrapper h2 {
-            color: #fff;
-        }
 
     .logoaval {
         display: block;
@@ -430,11 +506,11 @@
         padding: 0 0 20px 0;
     }
 
-    .form-control .input-field {
+    .input-wrap.w-70 .input-field {
         background: #332e2e;
     }
 
-    .form-control label {
+    .input-wrap.w-70 label {
         color: #ababab;
     }
 
@@ -445,11 +521,49 @@
     .form-wrapper :where(label, a, p) {
         color: #ababab;
     }
+
+    .input-wrap.w-70.focus .input-field {
+        background-color: var(--bg-color);
+        border: 2px solid #981616;
+        box-shadow: 0 0 0 5px rgb(157 0 0 / 0.32);
+    }
+
+    .input-wrap.w-70.focus label {
+        color: #981616;
+    }
+
+    .input-wrap.w-70.focus .icon {
+        color: #c20114;
+    }
+
+    .input-wrap .icon {
+        color: #151111;
+    }
+
+    .left {
+        z-index: 1000;
+    }
+
+    .fhfull {
+        display: none;
+    }
+
+    .fh700 {
+        display: block;
+    }
+
+    .form-heading a:hover {
+        color: var(--light-main-color);
+    }
 }
 
 @media screen and (max-width: 500px) {
     .image-wrapper .img {
         display: none;
+    }
+
+    .image-wrapper {
+        background-color: #151111;
     }
 }
 

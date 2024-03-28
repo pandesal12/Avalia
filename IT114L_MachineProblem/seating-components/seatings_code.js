@@ -126,7 +126,6 @@ function handleSeatClick() {
 
 
 function executeSubmit() {
-    event.preventDefault(); //remove this
     const hiddenField = document.querySelector(".HiddenFieldDataHere");
     //const hiddenField2 = document.querySelector(".HiddenFieldDataHere2");
 
@@ -156,20 +155,3 @@ function executeSubmit() {
 
 
 
-
-
-//function showSelected() {
-//    event.preventDefault();
-//    const selectedSeatConElements = document.querySelectorAll('.seatCon[data-seat-status="Selected"]');
-//    selectedSeatConElements.forEach(selectedSeatCon => {
-//        selectedSeatCon.dataset.seatPos
-//    });
-//}
-
-//function showSelected(event) {
-//    // Add your code to handle the button click here
-//    // For example, you can get the selected seats and perform other actions
-
-//    // Prevent the default form submission behavior
-//    event.preventDefault();
-//}

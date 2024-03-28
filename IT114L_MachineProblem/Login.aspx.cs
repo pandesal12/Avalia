@@ -26,17 +26,18 @@ namespace IT114L_MachineProblem
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
 
-                string checkUsernameQuery = $"SELECT * FROM ACCOUNTS WHERE username = '{txtUsername.Text}' and password = '{txtPassword.Text}'";
+                string checkUsernameQuery = "SELECT * FROM ACCOUNTS WHERE username = @Username AND password = @Password";
+
                 using (SqlCommand checkUsernameCmd = new SqlCommand(checkUsernameQuery, conn)) {
+                    checkUsernameCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                    checkUsernameCmd.Parameters.AddWithValue("@Password", txtPassword.Text);
 
                     using (SqlDataReader reader = checkUsernameCmd.ExecuteReader()) {
                         if (reader.HasRows) {
                             Session["logged"] = txtUsername.Text;
-                            
-
-                            while (reader.Read()) { 
+                            while (reader.Read()) {
                                 if ((bool)reader["isAdmin"]) {
-                                    Response.Redirect("Dashboard-Admin.aspx");
+                                    Response.Redirect("Manage-Admin.aspx");
                                 } else {
                                     Response.Redirect("Homepage-User.aspx");
                                 }
@@ -46,7 +47,6 @@ namespace IT114L_MachineProblem
                             return;
                         }
                     }
-
                 }
 
             };

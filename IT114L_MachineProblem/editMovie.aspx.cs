@@ -36,9 +36,16 @@ namespace IT114L_MachineProblem {
                 conn.Open();
 
 
-                string updateQuery = $"UPDATE MOVIE SET title = '{title_t}', price = {double.Parse(price)}, imagePath = '{imgPath}', description = '{synopsis}', genre = '{genres}' WHERE title = '{urlTitle}'";
+                string updateQuery = "UPDATE MOVIE SET title = @NewTitle, price = @Price, imagePath = @ImagePath, description = @Synopsis, genre = @Genres WHERE title = @OldTitle";
 
                 using (SqlCommand cmd = new SqlCommand(updateQuery, conn)) {
+                    cmd.Parameters.AddWithValue("@NewTitle", title_t);
+                    cmd.Parameters.AddWithValue("@Price", double.Parse(price));
+                    cmd.Parameters.AddWithValue("@ImagePath", imgPath);
+                    cmd.Parameters.AddWithValue("@Synopsis", synopsis);
+                    cmd.Parameters.AddWithValue("@Genres", genres);
+                    cmd.Parameters.AddWithValue("@OldTitle", urlTitle);
+
                     int affectedRows = cmd.ExecuteNonQuery();
                 }
             }

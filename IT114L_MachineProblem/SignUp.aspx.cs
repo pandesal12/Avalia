@@ -35,21 +35,25 @@ namespace IT114L_MachineProblem
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
 
-                string checkUsernameQuery = $"SELECT COUNT(*) FROM ACCOUNTS WHERE username = '{txtUsername.Text}'";
+                string checkUsernameQuery = "SELECT COUNT(*) FROM ACCOUNTS WHERE username = @Username";
+
                 using (SqlCommand checkUsernameCmd = new SqlCommand(checkUsernameQuery, conn)) {
+                    checkUsernameCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                     int existingUserCount = (int)checkUsernameCmd.ExecuteScalar();
 
                     if (existingUserCount > 0) {
-
                         Response.Write("<script>alert('Account Exists Already!')</script>");
-                        return; 
+                        return;
                     }
                 }
 
-                string insertQuery = $"INSERT INTO ACCOUNTS (username, password, isAdmin) VALUES ('{txtUsername.Text}','{password}', 0)";
-                using (SqlCommand cmd = new SqlCommand(insertQuery, conn)) {
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                string insertQuery = "INSERT INTO ACCOUNTS (username, password, isAdmin) VALUES (@Username, @Password, 0)";
 
+                using (SqlCommand cmd = new SqlCommand(insertQuery, conn)) {
+                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0) {
                         Session["logged"] = txtUsername.Text;
                         Response.Redirect("Homepage-User.aspx");

@@ -21,6 +21,7 @@ body {
     --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
     --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
     --input-text: #8c9aaf;
+    --darkred: #b80414;
 }
 
 a {
@@ -35,14 +36,14 @@ header {
     z-index: 4;
 }
 
-header .container {
-    max-width: 82rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    height: 65px;
-    display: flex;
-    align-items: flex-end;
-}
+    header .container {
+        max-width: 82rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+        height: 65px;
+        display: flex;
+        align-items: flex-end;
+    }
 
 .logo {
     display: flex;
@@ -74,18 +75,18 @@ header ul {
     background-color: var(--bg-color);
 }
 
-.signup .container {
-    height: 100vh;
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
+    .signup .container {
+        height: 100vh;
+        min-height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
-.signup .container > div {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+        .signup .container > div {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
 
 .left {
     width: 100%;
@@ -131,11 +132,11 @@ header ul {
     position: relative;
 }
 
-.input-wrap.w-70 {
-    grid-column: span 2;
-    width: 70%;
-    margin-left: 4rem;
-}
+    .input-wrap.w-70 {
+        grid-column: span 2;
+        width: 70%;
+        margin-left: 4rem;
+    }
 
 .input-field {
     width: 100%;
@@ -153,9 +154,9 @@ header ul {
     transition: 0.3s;
 }
 
-.input-field:hover {
-    background-color: var(--input-bg-hover);
-}
+    .input-field:hover {
+        background-color: var(--input-bg-hover);
+    }
 
 .input-wrap label {
     position: absolute;
@@ -216,9 +217,9 @@ header ul {
 }
 
 
-.btn:hover {
-    background-color: var(--light-text-color);
-}
+    .btn:hover {
+        background-color: var(--light-text-color);
+    }
 
 .right {
     display: grid;
@@ -232,13 +233,13 @@ header ul {
     grid-column: 2;
 }
 
-.image-wrapper .img {
-    position: absolute;
-    height: 130%;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+    .image-wrapper .img {
+        position: absolute;
+        height: 130%;
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 .wave-wrap {
     position: absolute;
@@ -249,13 +250,13 @@ header ul {
     background-color: var(--bg-color);
 }
 
-.wave-wrap svg {
-    position: absolute;
-    height: calc(100% + 10px);
-    top: 50%;
-    transform: translateY(-50%);
-    left: calc(100% - 2px);
-}
+    .wave-wrap svg {
+        position: absolute;
+        height: calc(100% + 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% - 2px);
+    }
 
 #wave {
     fill: var(--bg-color);
@@ -287,10 +288,14 @@ header ul {
     font-size: 0.9rem;
 }
 
-.form-heading a:hover {
-    color: rgb(147, 35, 35);
+    .form-heading a:hover {
+        color: rgb(147, 35, 35);
+    }
+
+.logoaval {
+    display: none;
 }
 
-.Newcontainer {
+.fh700 {
     display: none;
 }
