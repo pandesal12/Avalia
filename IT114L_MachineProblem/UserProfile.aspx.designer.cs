@@ -13,6 +13,15 @@ namespace IT114L_MachineProblem {
     public partial class UserProfile {
 
         /// <summary>
+        /// your_username control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl your_username;
+
+        /// <summary>
         /// pending_movies control.
         /// </summary>
         /// <remarks>

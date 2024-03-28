@@ -29,6 +29,7 @@ namespace IT114L_MachineProblem
                     }
                 }
             }
+            your_username.InnerText = (string)Session["logged"];
 
 
                 //DB

@@ -12,13 +12,11 @@
                 <div class="greeting-text">
                     <label>
                         Hello,
-                        <span id="your-username">Robert Fox</span>
+                        <span runat="server" id="your_username"></span>
                         !
                     </label>
                 </div>
                 <div class="userinfo-count">
-                    <label>Pending: &nbsp;<span id="pendingCount">0</span></label>
-                    <label>Complete: &nbsp;<span id="completeCount">0</span></label>
                 </div>
             </div>
         </div>
@@ -41,7 +39,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="table_body">
+        <%--<div class="table_body">
             <label>Booking History</label>
             <table>
                 <thead>
@@ -71,6 +69,6 @@
                     
                 </tbody>
             </table>
-        </div>
+        </div>--%>
     </div>
 </asp:Content>
