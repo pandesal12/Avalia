@@ -14,12 +14,11 @@ namespace IT114L_MachineProblem
 {
     public partial class Schedule_User : System.Web.UI.Page
     {
-        public string urlTitle;
         public int movieID;
         protected void Page_Load(object sender, EventArgs e) {
             //DropDownList1.Items.Add(new ListItem("3:00PM - 6:05PM", "time1"));
             Uri url = Request.Url;
-            urlTitle = Request.QueryString["title"];
+            string urlTitle = Request.QueryString["title"];
             movieID = 0;
             var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
 
@@ -27,7 +26,7 @@ namespace IT114L_MachineProblem
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
 
-                string getMovieIDQuery = "SELECT movie.movieID FROM movie JOIN schedule ON schedule.movieID = movie.movieID WHERE title = @Title";
+                string getMovieIDQuery = "SELECT * FROM movie JOIN schedule ON schedule.movieID = movie.movieID WHERE title = @Title";
                 using (SqlCommand cmd = new SqlCommand(getMovieIDQuery, conn)) {
                     cmd.Parameters.AddWithValue("@Title", urlTitle);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
@@ -41,7 +40,6 @@ namespace IT114L_MachineProblem
                             string scheduleTime = reader["scheduleTime"].ToString();
                             string scheduleID = reader["scheduleID"].ToString();
                             imageMovie.ImageUrl = reader["imagePath"].ToString();
-                            //Response.Write($"aaaaaaaaa:{reader["image"].ToString()}");
                             DropDownList1.Items.Add(new ListItem($"{scheduleTime}", $"{scheduleID}"));
 
                             
