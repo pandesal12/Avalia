@@ -43,9 +43,11 @@ namespace IT114L_MachineProblem
                                 string durationQuery = "SELECT duration FROM Schedule JOIN MOVIE ON schedule.movieID = movie.movieID WHERE title = @Title";
                                 using (SqlConnection conn2 = new SqlConnection(connString)) {
                                     conn2.Open();
+                                    
                                     using (SqlCommand durationCmd = new SqlCommand(durationQuery, conn2)) {
+                                        durationCmd.Parameters.AddWithValue("@Title", title);
                                         using (SqlDataReader durationReader = durationCmd.ExecuteReader()) {
-                                            cmd.Parameters.AddWithValue("@Title", title);
+                                            
                                             if (durationReader.Read()) {
                                                 duration = durationReader["duration"].ToString();
                                             }
@@ -55,6 +57,27 @@ namespace IT114L_MachineProblem
 
 
 
+                                //string movieHtml = $@"
+                                //    <div class='{classAttribute}' onclick=""redirectToSchedule('{title}')"">
+                                //        <div class='post-img'>
+                                //            <img alt='{title}' src='{imagePath}'>
+                                //        </div>
+                                //        <div class='main-slider-text'>
+                                //            <span class='status'>Now Showing</span>
+                                //            <div class='bottom-text'>
+                                //                <div class='movie-name'>
+                                //                    <span>{timeConverter(float.Parse(duration))}</span>
+                                //                    <a href='#'>{title}</a>
+                                //                </div>
+                                //                <div class='category-rating'>
+                                //                    <div class='category'>
+                                //                        <a href='#'>{genre}</a>
+                                //                    </div>
+                                //                </div>
+                                //            </div>
+                                //        </div>
+                                //    </div>
+                                //";
                                 string movieHtml = $@"
                                     <div class='{classAttribute}' onclick=""redirectToSchedule('{title}')"">
                                         <div class='post-img'>

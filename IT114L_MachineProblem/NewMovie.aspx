@@ -1,14 +1,14 @@
 ﻿<%@ Page MasterPageFile="~/Admin.Master" Language="C#" AutoEventWireup="true" CodeBehind="NewMovie.aspx.cs" Inherits="IT114L_MachineProblem.NewMovie" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/manage-admin.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/newmovie.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints.css") %>" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     
-    <h2>New Movie Details</h2>
+    <h2 class="moveMeDown">New Movie Details</h2>
     <div class="movieContainer">
         <div class="uploadContainer">
             <asp:Image ID="imgPreview" runat="server" Visible="true" CssClass="imgpreview"/>
@@ -91,7 +91,10 @@
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
                 var fileNameElement = document.getElementById('<%= FileUpload1.ClientID %>');
-
+                var labelText = document.querySelector(".moveMeDown");
+                labelText.setAttribute("class", "moviePreview");
+                <%--var imgPreview = document.getElementById('<%= imgPreview.ClientID %>');
+                imgPreview.setAttribute("class", "moviePreview");--%>
                  reader.onload = function (e) {
                 var image = document.getElementById('<%= imgPreview.ClientID %>');
                     image.src = e.target.result;
