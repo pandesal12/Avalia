@@ -7,10 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IT114L_MachineProblem {
+namespace IT114L_MachineProblem
+{
 
 
-    public partial class WebForm1 {
+    public partial class WebForm1
+    {
 
         /// <summary>
         /// FileUpload1 control.
@@ -40,6 +42,15 @@ namespace IT114L_MachineProblem {
         protected global::System.Web.UI.WebControls.TextBox price_tb;
 
         /// <summary>
+        /// PriceValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PriceValidator;
+
+        /// <summary>
         /// synopsis_tb control.
         /// </summary>
         /// <remarks>
@@ -49,13 +60,13 @@ namespace IT114L_MachineProblem {
         protected global::System.Web.UI.WebControls.TextBox synopsis_tb;
 
         /// <summary>
-        /// genres_tb control.
+        /// cblGenres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox genres_tb;
+        protected global::System.Web.UI.WebControls.CheckBoxList cblGenres;
 
         /// <summary>
         /// Button1 control.

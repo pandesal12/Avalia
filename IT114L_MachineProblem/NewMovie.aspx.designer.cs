@@ -60,6 +60,15 @@ namespace IT114L_MachineProblem
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
+        /// DateValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator DateValidator;
+
+        /// <summary>
         /// TextBox4 control.
         /// </summary>
         /// <remarks>
@@ -69,6 +78,15 @@ namespace IT114L_MachineProblem
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
 
         /// <summary>
+        /// DurationValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator DurationValidator;
+
+        /// <summary>
         /// TextBox5 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,15 @@ namespace IT114L_MachineProblem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
+
+        /// <summary>
+        /// PriceValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PriceValidator;
 
         /// <summary>
         /// cblGenres control.

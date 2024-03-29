@@ -57,7 +57,7 @@ div#ChangeContent {
 .formContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center; 
 }
 
 .description {
@@ -72,7 +72,9 @@ div#ChangeContent {
 
 .genre-list {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 50px;
+    gap: 100px;
+
 }
 
 .saveBtn {
@@ -84,13 +86,20 @@ div#ChangeContent {
     margin-left: 100px;
 }
 
-    .saveBtn:hover {
-        background-color: rgb(173, 1, 1);
-    }
+.saveBtn:hover {
+    background-color: rgb(173, 1, 1);
+}
 
 .imgpreview {
     width: 400px;
     height: auto;
     border: 10px solid rgb(173, 1, 1);
     border-style: groove;
+}
+
+.validationCtr{
+    color: red;
+    margin-left: 100px;
+    max-width: 360px;
+    text-align: center;
 }
