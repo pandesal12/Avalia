@@ -29,7 +29,7 @@
                 <i class="uil uil-times navCloseBtn"></i>
                 <a href="Dashboard-Admin.aspx">Dashboard</a>
                 <a href="Manage-Admin.aspx">Manage</a>
-                <a href="Login.aspx">Log out</a>
+                <a href="Logins.aspx">Log out</a>
                 <!--User-Profile-->
                 <div class="userprofile">
                         <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="sample-pic" />
