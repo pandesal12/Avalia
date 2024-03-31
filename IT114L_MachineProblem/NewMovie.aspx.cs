@@ -13,6 +13,8 @@ namespace IT114L_MachineProblem {
     public partial class NewMovie : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             if (!IsPostBack)
             {
                 string[] genres = { "Action", "Adventure", "Comedy", "Drama", "Family", "Fantasy", "History", "Horror", "Mystery", "Romance", "Sci-Fi", "Sport", "Thriller" };
@@ -29,6 +31,11 @@ namespace IT114L_MachineProblem {
                     listItem.Attributes["style"] = "margin-right: 10px";
                 }
             }
+        }
+
+        protected void test_click(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert(I was called!)</script>");
         }
 
         protected void Button1_Click(object sender, EventArgs e) {
