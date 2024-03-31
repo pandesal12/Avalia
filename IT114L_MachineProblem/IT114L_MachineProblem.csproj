@@ -121,7 +121,7 @@
     <Content Include="Manage-Admin.aspx" />
     <Content Include="Movies-User.aspx" />
     <Content Include="Schedule-User.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="Logins.aspx" />
     <Content Include="front-end\styles\logSign.css" />
     <Content Include="SignUp.aspx" />
     <Content Include="testSite.aspx" />
@@ -182,12 +182,12 @@
     <Compile Include="Schedule-User.aspx.designer.cs">
       <DependentUpon>Schedule-User.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Logins.aspx.cs">
+      <DependentUpon>Logins.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Logins.aspx.designer.cs">
+      <DependentUpon>Logins.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
