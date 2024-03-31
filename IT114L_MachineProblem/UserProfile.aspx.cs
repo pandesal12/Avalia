@@ -20,8 +20,9 @@ namespace IT114L_MachineProblem
             int userID = 0;
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
-                string selectUserID = $"SELECT * FROM Accounts where username = '{currentlyLogged}'";
+                string selectUserID = "SELECT * FROM Accounts WHERE username = @Username";
                 using (SqlCommand cmd = new SqlCommand(selectUserID, conn)) {
+                    cmd.Parameters.AddWithValue("@Username", currentlyLogged);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
                         if (reader.Read()) {
                             userID = (int)reader["userID"];
@@ -37,9 +38,13 @@ namespace IT114L_MachineProblem
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
 
-                string selectMoviesQuery = $"SELECT distinct schedule.scheduleID, scheduleTime, duration, movie.movieID, title, description, genre, price, imagePath, userID seatNumber  FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID JOIN BOOKING on schedule.scheduleID = booking.scheduleID where userID = {userID}";
+                string selectMoviesQuery = @"SELECT distinct schedule.scheduleID, scheduleTime, duration, movie.movieID, title, description, genre, price, imagePath, userID, seatNumber 
+                                            FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID 
+                                            JOIN BOOKING on schedule.scheduleID = booking.scheduleID 
+                                            where userID = @UserID";
 
                 using (SqlCommand cmd = new SqlCommand(selectMoviesQuery, conn)) {
+                    cmd.Parameters.AddWithValue("@UserID", userID);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
 
 
@@ -53,10 +58,12 @@ namespace IT114L_MachineProblem
                                 string schedule = reader["scheduleTime"].ToString();
                                 int scheduleID = (int)reader["scheduleID"];
                                 //
-                                string selectBooking = $"SELECT * FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID JOIN BOOKING on schedule.scheduleID = booking.scheduleID where booking.userID = {userID} AND booking.scheduleID = {scheduleID}";
+                                string selectBooking = $"SELECT * FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID JOIN BOOKING on schedule.scheduleID = booking.scheduleID where booking.userID = @UserID AND booking.scheduleID = @ScheduleID";
                                 using (SqlConnection conn2 = new SqlConnection(connString)) {
                                     conn2.Open();
                                     using (SqlCommand subCmd = new SqlCommand(selectBooking, conn2)) {
+                                        subCmd.Parameters.AddWithValue("@UserID", userID);
+                                        subCmd.Parameters.AddWithValue("@ScheduleID", scheduleID);
                                         using (SqlDataReader subReader = subCmd.ExecuteReader()) {
                                             if (subReader.HasRows) {
                                                 while (subReader.Read()) {

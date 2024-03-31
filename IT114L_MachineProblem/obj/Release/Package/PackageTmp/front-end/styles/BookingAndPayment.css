@@ -1,0 +1,67 @@
+﻿body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 100px;
+}
+
+/* CSS for Movie Details */
+.movie-details {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+    .movie-details img {
+        max-width: 100%;
+    }
+
+    .movie-details h2 {
+        margin-top: 0;
+    }
+
+/* CSS for Payment Section */
+#paymentList {
+    display: flex;
+}
+
+.payment-section {
+    width: 100%;
+    padding: 20px;
+}
+
+    .payment-section h2 {
+        margin-top: 0;
+    }
+
+.paymentOption {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.payment-section input[type="radio"] {
+    display: none;
+}
+
+.paymentOption img {
+    border: 2px solid transparent;
+    width: 110px;
+    height: 75px;
+    border-radius: 15px;
+}
+
+    .paymentOption img.selected {
+        border-color: rgb(229, 30, 30);
+    }
+
+.form-textbox {
+    width: 100%;
+}

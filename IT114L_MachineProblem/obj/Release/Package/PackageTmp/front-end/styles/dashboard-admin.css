@@ -1,0 +1,177 @@
+﻿/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --navbar-background-color: #0D140C;
+    --navbar-background-transparent-color: #151b14ce;
+    --content-background-color: #191f18;
+    --movie-container-color: #3C3C3C;
+    --user-container-color: #262626;
+    --dark-user-container-color: #1d1a1a;
+    --darkhover-user-container-color: #2e2b2b;
+    --filter-container-active-color: #0D140C;
+    --filter-container-color: #7E7373;
+    --light-text-color: #fff;
+    --movie-name-text-color: #dfdfdf;
+    --muted-text-color: #969696;
+    --dark-text-color: #000;
+    --red-text-color: #f5182ef8;
+    --green-text-color: #18f53df8;
+    --user-text-color: #807e7e;
+    --user-muted-text-color: #7e767675;
+    --status-container-color: #e70634;
+    --option-list-color: #0d140cc7;
+    --btn-color-1: #C10214;
+    --textarea-color1: #403B3B;
+    --textarea-color2: #221d1d;
+    --btn-color-2: #2F2C2C;
+    --gold-color: #ffd700;
+    --comment-container-color: #191919;
+    --admin-container-color: #474747;
+    --seat-available-color: #D9D9D9;
+    --seat-selected-color: #FFBE17;
+    --seat-taken-color: #C20114;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--content-background-color);
+}
+
+/* ADMIN-DASHBOARD ===============================*/
+.admin-interface {
+    color: var(--light-text-color);
+    margin: 71px auto 30px auto;
+    overflow: hidden;
+}
+
+.overview-label,
+.screening-label {
+    margin: .5rem auto;
+    position: relative;
+    left: 25px;
+    display: flex;
+    color: var(--light-text-color);
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.overview-label {
+    margin-top: 2.5rem;
+}
+
+.screening-label {
+    margin-top: 3.5rem;
+}
+
+.overview-container,
+.screening-container {
+    text-align: center;
+    background-color: var(--admin-container-color);
+    box-shadow: .4rem .4rem .8rem rgba(139, 137, 137, 0.333);
+}
+
+.overview-container {
+    padding: 2px;
+}
+
+.overview-container table {
+    width: 100%;
+    margin: 1.2rem;
+}
+
+.overview-container table,
+.overview-container th,
+.overview-container td {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.overview-container th {
+    font-size: 20px;
+}
+
+.overview-container td {
+    font-weight: 500;
+}
+
+.screeningbox-container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+.screening-container {
+    height: 400px;
+    display: flex;
+    grid-gap: 35px;
+    margin: 20px auto;
+    padding: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.screening-box {
+    width: 188px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.418);
+    position: relative;
+}
+
+.screening-box .screening-img {
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.screening-box .screening-img img {
+    width: auto;
+    height: 100%;
+    object-position: top center;
+    object-fit: fill;
+}
+
+.screening-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.screeningcinema-details {
+    margin-top: 15px;
+}
+
+    .screeningcinema-details .cinemanumber {
+        font-weight: 700;
+    }
+
+#bookingsCount {
+    color: var(--red-text-color);
+    font-size: 24px;
+}
+
+.screening-container::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.screening-container::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.screening-container:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}

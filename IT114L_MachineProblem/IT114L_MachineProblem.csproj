@@ -72,6 +72,7 @@
       <DependentUpon>AvaliaDB.mdf</DependentUpon>
     </Content>
     <Content Include="Dashboard-Admin.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="front-end\admin-Script.js" />
     <Content Include="front-end\createAccount.js" />
     <Content Include="front-end\images\60mins.jpg" />
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="Dashboard-Admin.aspx.designer.cs">
       <DependentUpon>Dashboard-Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage-User.aspx.cs">
       <DependentUpon>Homepage-User.aspx</DependentUpon>
@@ -236,6 +244,7 @@
     <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="User.Master" />
+    <None Include="Properties\PublishProfiles\IT114LMachineProblem20240329045700 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

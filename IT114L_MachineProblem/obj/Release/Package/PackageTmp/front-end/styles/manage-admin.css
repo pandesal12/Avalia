@@ -1,0 +1,239 @@
+﻿/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --navbar-background-color: #0D140C;
+    --navbar-background-transparent-color: #151b14ce;
+    --content-background-color: #191f18;
+    --movie-container-color: #3C3C3C;
+    --filter-container-active-color: #0D140C;
+    --filter-container-color: #7E7373;
+    --light-text-color: #fff;
+    --movie-name-text-color: #dfdfdf;
+    --muted-text-color: #969696;
+    --dark-text-color: #000;
+    --red-text-color: #f5182ef8;
+    --status-container-color: #e70634;
+    --option-list-color: #0d140cc7;
+    --btn-color-1: #C10214;
+    --seat-available-color: #D9D9D9;
+    --seat-selected-color: #FFBE17;
+    --seat-taken-color: #C20114;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--content-background-color);
+}
+
+/* MANAGE SECTION ===============================*/
+.manageMovie {
+    margin: 170px;
+}
+
+    .manageMovie h2 {
+        color: #fff;
+        position: center;
+        font-size: 45px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+.addMovie {
+    display: block;
+    background-color: #fff;
+    color: #151111;
+    padding: 15px 10% 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .addMovie:hover {
+        background-color: #3C3C3C;
+        cursor: pointer;
+        color: #fff;
+    }
+
+.movieModify {
+    list-style: none;
+    padding: 10px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+    .movieModify li {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+        .movieModify li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+.movieList {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.TopGun {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C3C3C;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.movieList li {
+    color: #fff;
+    margin-right: 25px;
+}
+
+.movieList a {
+    color: #fff;
+}
+
+    .movieList a:hover {
+        text-decoration: underline;
+    }
+
+.posterImage {
+    width: 4.5rem;
+    height: 80px;
+    display: block;
+    border-radius: 20px 0 0 20px;
+}
+
+/* MODIFY MOVIE ===============================*/
+
+.popup {
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s, top 0.4s;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #3C3C3C;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    font-family: 'Arial', sans-serif;
+}
+
+    .popup-content h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .popup-content label {
+        font-size: 15px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .popup-content input[type="text"],
+    .popup-content textarea,
+    .popup-content input[type="file"] {
+        width: calc(100% - 12px);
+        padding: 10px;
+        margin-bottom: px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #333;
+    }
+
+    .popup-content textarea {
+        height: 100px;
+    }
+
+    .popup-content button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .popup-content button:first-child {
+            background-color: #666;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .popup-content button:last-child {
+            background-color: #e50914;
+            color: #fff;
+        }
+
+        .popup-content button:hover {
+            opacity: 0.8;
+        }
+
+    .popup-content input[type="file"] {
+        color: #fff;
+    }
+
+        .popup-content input[type="file"]::-webkit-file-upload-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #e50914;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+            .popup-content input[type="file"]::-webkit-file-upload-button:hover {
+                background-color: #c3000d;
+            }
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.close-popup {
+    visibility: hidden;
+}
