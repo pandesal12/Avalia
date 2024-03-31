@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema Booking Homepage</title>
     <!--Link to CSS file-->
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/masterpage.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("Content/front-end/styles/masterpage.css") %>" />
     <!--Unicons CSS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -59,7 +59,7 @@
     </form>
 
     <!--Link to JS file-->
-    <script src="<%= ResolveUrl("~/front-end/user-script.js") %>"></script>
+    <script src="<%= ResolveUrl("Content/front-end/user-script.js") %>"></script>
 </body>
 </html>
 

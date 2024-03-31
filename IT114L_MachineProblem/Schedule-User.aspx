@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Schedule-User.aspx.cs" Inherits="IT114L_MachineProblem.Schedule_User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/breakpoints.css") %>" />
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/schedule-user.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("Content/front-end/styles/schedule-user.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("Content/front-end/styles/breakpoints.css") %>" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     <!--Schedule Page-->
@@ -96,5 +96,5 @@
             </div>
         </div>
     </div>
-    <script src="seating-components/seatings_Code.js"></script>
+    <script src="Content/seating-components/seatings_Code.js"></script>
 </asp:Content>
