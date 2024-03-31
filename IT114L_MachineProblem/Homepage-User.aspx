@@ -11,7 +11,7 @@
         <div class="list">
             <!--Item List 1-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/godzilla_2.png" alt="itemlist1" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/godzilla_2.png" alt="itemlist1" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">Godzilla x Kong: The New Empire</div>
@@ -20,7 +20,7 @@
             </div>
             <!--Item List 2-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/apes_2.jpg" alt="itemlist2" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/apes_2.jpg" alt="itemlist2" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">Kingdom of the Planet of the Apes</div>
@@ -29,7 +29,7 @@
             </div>
             <!--Item List 3-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/kraven_2.jpg" alt="itemlist3" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/kraven_2.jpg" alt="itemlist3" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">Kraven the Hunter</div>
@@ -38,7 +38,7 @@
             </div>
             <!--Item List 4-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/despicableme4_2.jpg" alt="itemlist4" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/despicableme4_2.jpg" alt="itemlist4" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">Despicable Me 4</div>
@@ -47,7 +47,7 @@
             </div>
             <!--Item List 5-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/abigail_2.jpg" alt="itemlist5" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/abigail_2.jpg" alt="itemlist5" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">Abigail</div>
@@ -56,7 +56,7 @@
             </div>
             <!--Item List 6-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/fallguy_2.jpg" alt="itemlist6" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/fallguy_2.jpg" alt="itemlist6" />
                 <div class="content">
                     <div class="author">Upcoming</div>
                     <div class="title">The Fall Guy</div>
@@ -68,32 +68,32 @@
         <div class="thumbnail">
             <!--Item List 2-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/apes_1.jpeg" alt="itemlist2" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/apes_1.jpeg" alt="itemlist2" />
                 <div class="content"><div class="title">??????</div></div>
             </div>
             <!--Item List 3-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/kraven_1.jpg" alt="itemlist3" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/kraven_1.jpg" alt="itemlist3" />
                 <div class="content"><div class="title">Kraven the Hunter</div></div>
             </div>
             <!--Item List 4-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/despicableme4_1.jpg" alt="itemlist4" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/despicableme4_1.jpg" alt="itemlist4" />
                 <div class="content"><div class="title">Despicable Me 4</div></div>
             </div>
             <!--Item List 5-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/abigail_1.jpg" alt="itemlist5" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/abigail_1.jpg" alt="itemlist5" />
                 <div class="content"><div class="title">Abigail</div></div>
             </div>
             <!--Item List 6-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/fallguy_1.jpg" alt="itemlist6" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/fallguy_1.jpg" alt="itemlist6" />
                 <div class="content"><div class="title">The Fall Guy</div></div>
             </div>
             <!--Item List 1-->
             <div class="item">
-                <asp:Image runat="server" ImageUrl="/front-end/images/godzilla_1.jpg" alt="itemlist2" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/godzilla_1.jpg" alt="itemlist2" />
                 <div class="content"><div class="title">Godzilla x Kong: The New Empire</div></div>
             </div>
         </div>

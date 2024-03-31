@@ -25,7 +25,7 @@
         <nav class="nav">
             <i class="uil uil-bars navOpenBtn"></i>
             <div class="homepage-logo">
-                <asp:Image runat="server" ImageUrl="/front-end/images/avalia_logo.png" alt="AVALIA-logo" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/avalia_logo.png" alt="AVALIA-logo" />
             </div>
             <div class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
@@ -35,7 +35,7 @@
 <%--                <a href="Schedule-User.aspx">Schedule</a>--%>
                 <!--User-Profile-->
                 <div class="userprofile">
-                        <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
+                        <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="sample-pic" />
                         <a href="UserProfile.aspx"><label id="user-name1">Edna</label></a>
                 </div>
             </div>
@@ -47,7 +47,7 @@
             <!--User-Profile-->
             <div class="userprofile userprofile-visible">
                 <a href="UserProfile.aspx"><label id="user_name2" runat="server">Robert Fox</label></a>
-                    <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="sample-pic" />
             </div>
         </nav>
 

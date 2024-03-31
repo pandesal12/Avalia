@@ -16,7 +16,7 @@
                     <li>
                         <a href="#" class="logo">
                             <div class="images">
-                                <img src="/front-end/images/avalia_logo.png" />
+                                <img src="Content/front-end/images/avalia_logo.png" />
                             </div>
                         </a>
                     </li>
@@ -30,7 +30,7 @@
                 <div class="container">
                     <div class="left">
                         <div class="form-wrapper">
-                            <img src="/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
+                            <img src="Content/front-end/images/avalia_logo.png" alt="logo" class="logoaval"/>
                             <div class="fhfull">
                                 <div class="form-heading">
                                     <h1>Sign in</h1>
@@ -70,7 +70,7 @@
 
                     <div class="right">
                         <div class="image-wrapper">
-                            <img src="/front-end/images/login_bg.jpg" class="img" runat="server" id="imgBg"/>
+                            <img src="Content/front-end/images/login_bg.jpg" class="img" runat="server" id="imgBg"/>
                             <div class="wave-wrap">
                                 <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path id="wave" d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />

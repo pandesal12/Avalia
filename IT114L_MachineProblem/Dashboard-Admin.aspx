@@ -33,7 +33,7 @@
                 <div class="screeningbox-container">
                     <div class="screening-box">
                         <div class="screening-img">
-                            <asp:Image runat="server" ImageUrl="/front-end/images/damsel.jpg" alt="itemlist1" />
+                            <asp:Image runat="server" ImageUrl="Content/front-end/images/damsel.jpg" alt="itemlist1" />
                         </div>
                         <div class="main-slider-text">
                             <span class="status">Now Showing</span>
@@ -60,7 +60,7 @@
                 <div class="screeningbox-container">
                     <div class="screening-box">
                         <div class="screening-img">
-                            <asp:Image runat="server" ImageUrl="/front-end/images/lightsout.jpg" alt="itemlist2" />
+                            <asp:Image runat="server" ImageUrl="Content/front-end/images/lightsout.jpg" alt="itemlist2" />
                         </div>
                         <div class="main-slider-text">
                             <span class="status">Now Showing</span>
@@ -87,7 +87,7 @@
                 <div class="screeningbox-container">
                     <div class="screening-box">
                         <div class="screening-img">
-                            <asp:Image runat="server" ImageUrl="/front-end/images/mynameislohkiwan.jpg" alt="itemlist3" />
+                            <asp:Image runat="server" ImageUrl="Content/front-end/images/mynameislohkiwan.jpg" alt="itemlist3" />
                         </div>
                         <div class="main-slider-text">
                             <span class="status">Now Showing</span>
@@ -114,7 +114,7 @@
                 <div class="screeningbox-container">
                     <div class="screening-box">
                         <div class="screening-img">
-                            <asp:Image runat="server" ImageUrl="/front-end/images/60mins.jpg" alt="itemlist4" />
+                            <asp:Image runat="server" ImageUrl="Content/front-end/images/60mins.jpg" alt="itemlist4" />
                         </div>
                         <div class="main-slider-text">
                             <span class="status">Now Showing</span>

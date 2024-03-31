@@ -21,15 +21,15 @@
                 <div id="paymentList">
                     <label class="paymentOption">
                         <input type="radio" name="paymentMethod" value="Visa"/>
-                        <img src="/front-end/assets/visa.jpg" alt="Visa" />
+                        <img src="Content/front-end/assets/visa.jpg" alt="Visa" />
                     </label>
                     <label class="paymentOption">
                         <input type="radio" name="paymentMethod" value="Mastercard"/>
-                        <img src="/front-end/assets/mastercard.jpg" alt="Mastercard" />
+                        <img src="Content/front-end/assets/mastercard.jpg" alt="Mastercard" />
                     </label>
                     <label class="paymentOption">
                         <input type="radio" name="paymentMethod" value="GCash"/>
-                        <img src="/front-end/assets/gcash.jpg" alt="GCash" />
+                        <img src="Content/front-end/assets/gcash.jpg" alt="GCash" />
                     </label>
                 </div>
                 <div class="textbox-container">

@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentSection" runat="server">
     <div class="movies-section">
-        <asp:Image runat="server" ImageUrl="/front-end/images/themarvels.jpeg" alt="itemlist1" />
+        <asp:Image runat="server" ImageUrl="Content/front-end/images/themarvels.jpeg" alt="itemlist1" />
                 
         <div class="moviereviews-container">
             <div class="nav-movies">
@@ -106,7 +106,7 @@
                         <div class="box-top">
                             <div class="profile">
                                 <div class="profile-img">
-                                    <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="user-profile" />
+                                    <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="user-profile" />
                                 </div>
                                 <div class="name-user">
                                     <strong>User 1</strong>

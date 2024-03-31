@@ -39,7 +39,7 @@
         <div class="schedcinema-container">
             <div class="schedcinema-details">
 <%--                <label id="backbtn">&laquo; Back</label>--%>
-                <asp:Image id="imageMovie" runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie-display" /> <!--image can change-->
+                <asp:Image id="imageMovie" runat="server" ImageUrl="Content/front-end/images/hungergames.jpg" alt="movie-display" /> <!--image can change-->
                 <label style="margin-left: 20px" runat="server" id="movie_name"></label>
                 <div class="movie-details">
                     <div>

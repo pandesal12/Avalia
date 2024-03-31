@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema Booking Homepage</title>
     <!--Link to CSS file-->
-    <link rel="stylesheet" href="<%= ResolveUrl("~/front-end/styles/masterpage.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("Content/front-end/styles/masterpage.css") %>" />
     <!--Unicons CSS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
@@ -23,7 +23,7 @@
         <nav class="nav">
             <i class="uil uil-bars navOpenBtn"></i>
             <div class="homepage-logo">
-                <asp:Image runat="server" ImageUrl="/front-end/images/avalia_logo.png" alt="AVALIA-logo" />
+                <asp:Image runat="server" ImageUrl="Content/front-end/images/avalia_logo.png" alt="AVALIA-logo" />
             </div>
             <div class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
@@ -32,7 +32,7 @@
                 <a href="Login.aspx">Log out</a>
                 <!--User-Profile-->
                 <div class="userprofile">
-                        <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
+                        <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="sample-pic" />
                         <a href="UserProfile.aspx"><label id="user-name1">Edna</label></a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <!--User-Profile-->
             <div class="userprofile userprofile-visible">
                 <a href="UserProfile.aspx"><label runat="server" id="user_name2">Robert Fox</label></a>
-                    <asp:Image runat="server" ImageUrl="/front-end/images/robert_fox.png" alt="sample-pic" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/robert_fox.png" alt="sample-pic" />
             </div>
         </nav>
 
@@ -56,6 +56,6 @@
     </form>
 
     <!--Link to JS file-->
-    <script src="<%= ResolveUrl("~/front-end/admin-script.js") %>"></script>
+    <script src="<%= ResolveUrl("Content/front-end/admin-script.js") %>"></script>
 </body>
 </html>

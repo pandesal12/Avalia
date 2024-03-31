@@ -1,7 +1,7 @@
 ﻿ <!--Sample postbox1-->
             <div class="post-box fantasy adventure">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/damsel.jpg" alt="movie1" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/damsel.jpg" alt="movie1" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -22,7 +22,7 @@
             <!--Sample postbox2-->
             <div class="post-box action thriller">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/lightsout.jpg" alt="movie2" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/lightsout.jpg" alt="movie2" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -43,7 +43,7 @@
             <!--Sample postbox3-->
             <div class="post-box romance">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/mynameislohkiwan.jpg" alt="movie3" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/mynameislohkiwan.jpg" alt="movie3" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -64,7 +64,7 @@
             <!--Sample postbox4-->
             <div class="post-box action sport">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/60mins.jpg" alt="movie4" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/60mins.jpg" alt="movie4" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -85,7 +85,7 @@
             <!--Sample postbox5-->
             <div class="post-box comedy adventure">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/orionandthedark.jpg" alt="movie5" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/orionandthedark.jpg" alt="movie5" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -106,7 +106,7 @@
             <!--Sample postbox6-->
             <div class="post-box comedy romance">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/upgraded.jpg" alt="movie6" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/upgraded.jpg" alt="movie6" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -127,7 +127,7 @@
             <!--Sample postbox7-->
             <div class="post-box action sci-fi">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/transformers.jpg" alt="movie7" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/transformers.jpg" alt="movie7" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -148,7 +148,7 @@
             <!--Sample postbox8-->
             <div class="post-box action adventure fantasy">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/themarvels.jpeg" alt="movie8" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/themarvels.jpeg" alt="movie8" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -169,7 +169,7 @@
             <!--Sample postbox9-->
             <div class="post-box horror">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/theexorcist.jpg" alt="movie9" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/theexorcist.jpg" alt="movie9" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -190,7 +190,7 @@
             <!--Sample postbox10-->
             <div class="post-box adventure comedy fantasy">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/barbie.jpg" alt="movie10" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/barbie.jpg" alt="movie10" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -211,7 +211,7 @@
             <!--Sample postbox11-->
             <div class="post-box horror mystery thriller">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/thenun2.jpg" alt="movie11" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/thenun2.jpg" alt="movie11" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -232,7 +232,7 @@
             <!--Sample postbox12-->
             <div class="post-box horror mystery thriller">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/insidious.jpg" alt="movie12" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/insidious.jpg" alt="movie12" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -253,7 +253,7 @@
             <!--Sample postbox13-->
             <div class="post-box adventure family fantasy">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/thelittlemermaid.jpg" alt="movie13" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/thelittlemermaid.jpg" alt="movie13" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -274,7 +274,7 @@
             <!--Sample postbox14-->
             <div class="post-box comedy romance">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/youpeople.jpg" alt="movie14" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/youpeople.jpg" alt="movie14" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -295,7 +295,7 @@
             <!--Sample postbox15-->
             <div class="post-box action adventure drama">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/hungergames.jpg" alt="movie15" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/hungergames.jpg" alt="movie15" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
@@ -316,7 +316,7 @@
             <!--Sample postbox16-->
             <div class="post-box horror drama">
                 <div class="post-img">
-                    <asp:Image runat="server" ImageUrl="/front-end/images/hunger.jpg" alt="movie16" />
+                    <asp:Image runat="server" ImageUrl="Content/front-end/images/hunger.jpg" alt="movie16" />
                 </div>
                 <div class="main-slider-text">
                     <span class="status">Now Showing</span>
