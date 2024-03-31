@@ -74,43 +74,117 @@
     <Content Include="Content\front-end\assets\gcash.jpg" />
     <Content Include="Content\front-end\assets\mastercard.jpg" />
     <Content Include="Content\front-end\assets\visa.jpg" />
+    <Content Include="Content\front-end\images\dashed-wave.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\loginbg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\topgun.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\wave.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\seating-components\seatings_code.js" />
     <Content Include="Content\seating-components\seatings_Style.css" />
     <Content Include="Dashboard-Admin.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Content\front-end\admin-Script.js" />
     <Content Include="Content\front-end\createAccount.js" />
-    <Content Include="Content\front-end\images\60mins.jpg" />
-    <Content Include="Content\front-end\images\abigail_1.jpg" />
-    <Content Include="Content\front-end\images\abigail_2.jpg" />
-    <Content Include="Content\front-end\images\apes_1.jpeg" />
-    <Content Include="Content\front-end\images\apes_2.jpg" />
-    <Content Include="Content\front-end\images\avalia_logo.png" />
-    <Content Include="Content\front-end\images\barbie.jpg" />
-    <Content Include="Content\front-end\images\damsel.jpg" />
-    <Content Include="Content\front-end\images\despicableme4_1.jpg" />
-    <Content Include="Content\front-end\images\despicableme4_2.jpg" />
-    <Content Include="Content\front-end\images\fallguy_1.jpg" />
-    <Content Include="Content\front-end\images\fallguy_2.jpg" />
-    <Content Include="Content\front-end\images\godzilla_1.jpg" />
-    <Content Include="Content\front-end\images\godzilla_2.png" />
-    <Content Include="Content\front-end\images\hunger.jpg" />
-    <Content Include="Content\front-end\images\hungergames.jpg" />
-    <Content Include="Content\front-end\images\insidious.jpg" />
-    <Content Include="Content\front-end\images\kraven_1.jpg" />
-    <Content Include="Content\front-end\images\kraven_2.jpg" />
-    <Content Include="Content\front-end\images\lightsout.jpg" />
-    <Content Include="Content\front-end\images\movie-bg.jpg" />
-    <Content Include="Content\front-end\images\mynameislohkiwan.jpg" />
-    <Content Include="Content\front-end\images\orionandthedark.jpg" />
-    <Content Include="Content\front-end\images\robert_fox.png" />
-    <Content Include="Content\front-end\images\theexorcist.jpg" />
-    <Content Include="Content\front-end\images\thelittlemermaid.jpg" />
-    <Content Include="Content\front-end\images\themarvels.jpeg" />
-    <Content Include="Content\front-end\images\thenun2.jpg" />
-    <Content Include="Content\front-end\images\transformers.jpg" />
-    <Content Include="Content\front-end\images\upgraded.jpg" />
-    <Content Include="Content\front-end\images\youpeople.jpg" />
+    <Content Include="Content\front-end\images\60mins.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\abigail_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\abigail_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\apes_1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\apes_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\avalia_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\barbie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\damsel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\despicableme4_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\despicableme4_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\fallguy_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\fallguy_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\godzilla_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\godzilla_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\hunger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\hungergames.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\insidious.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\kraven_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\kraven_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\lightsout.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\movie-bg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\mynameislohkiwan.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\orionandthedark.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\robert_fox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\theexorcist.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\thelittlemermaid.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\themarvels.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\thenun2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\transformers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\upgraded.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\front-end\images\youpeople.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\front-end\styles\BookingAndPayment.css" />
     <Content Include="Content\front-end\styles\breakpoints.css" />
     <Content Include="Content\front-end\styles\dashboard-admin.css" />
