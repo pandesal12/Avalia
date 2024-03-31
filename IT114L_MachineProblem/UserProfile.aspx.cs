@@ -7,22 +7,20 @@ using System.Web.Hosting;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace IT114L_MachineProblem
-{
-    public partial class UserProfile : System.Web.UI.Page
-    {
+namespace IT114L_MachineProblem {
+    public partial class UserProfile : System.Web.UI.Page {
 
-        
+
         protected void Page_Load(object sender, EventArgs e) {
             string currentlyLogged = (string)Session["logged"];
-            var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
+            //var connString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\AvaliaDB.mdf"";Integrated Security=True";
+            var connString = $@"Data Source=avalia-server-db.database.windows.net;Initial Catalog=AvaliaDatabase;Persist Security Info=True;User ID=avaliaAdmin;Password=Avalia17";
 
             int userID = 0;
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
-                string selectUserID = "SELECT * FROM Accounts WHERE username = @Username";
+                string selectUserID = $"SELECT * FROM Accounts where username = '{currentlyLogged}'";
                 using (SqlCommand cmd = new SqlCommand(selectUserID, conn)) {
-                    cmd.Parameters.AddWithValue("@Username", currentlyLogged);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
                         if (reader.Read()) {
                             userID = (int)reader["userID"];
@@ -33,18 +31,19 @@ namespace IT114L_MachineProblem
             your_username.InnerText = (string)Session["logged"];
 
 
-                //DB
+            //DB
 
             using (SqlConnection conn = new SqlConnection(connString)) {
                 conn.Open();
 
-                string selectMoviesQuery = @"SELECT distinct schedule.scheduleID, scheduleTime, duration, movie.movieID, title, description, genre, price, imagePath, userID, seatNumber 
-                                            FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID 
-                                            JOIN BOOKING on schedule.scheduleID = booking.scheduleID 
-                                            where userID = @UserID";
+                string selectMoviesQuery = "SELECT distinct schedule.scheduleID, scheduleTime, duration, movie.movieID, title, description, genre, price, imagePath, userID seatNumber " +
+                                "FROM Schedule " +
+                                "JOIN MOVIE on schedule.movieID = movie.movieID " +
+                                "JOIN BOOKING on schedule.scheduleID = booking.scheduleID " +
+                                "WHERE userID = @userID";
 
                 using (SqlCommand cmd = new SqlCommand(selectMoviesQuery, conn)) {
-                    cmd.Parameters.AddWithValue("@UserID", userID);
+                    cmd.Parameters.AddWithValue("@userID", userID);
                     using (SqlDataReader reader = cmd.ExecuteReader()) {
 
 
@@ -58,12 +57,15 @@ namespace IT114L_MachineProblem
                                 string schedule = reader["scheduleTime"].ToString();
                                 int scheduleID = (int)reader["scheduleID"];
                                 //
-                                string selectBooking = $"SELECT * FROM Schedule JOIN MOVIE on schedule.movieID = movie.movieID JOIN BOOKING on schedule.scheduleID = booking.scheduleID where booking.userID = @UserID AND booking.scheduleID = @ScheduleID";
+                                string selectBooking = "SELECT * FROM Schedule " +
+                                            "JOIN MOVIE on schedule.movieID = movie.movieID " +
+                                            "JOIN BOOKING on schedule.scheduleID = booking.scheduleID " +
+                                            "WHERE booking.userID = @userID AND booking.scheduleID = @scheduleID";
                                 using (SqlConnection conn2 = new SqlConnection(connString)) {
                                     conn2.Open();
                                     using (SqlCommand subCmd = new SqlCommand(selectBooking, conn2)) {
-                                        subCmd.Parameters.AddWithValue("@UserID", userID);
-                                        subCmd.Parameters.AddWithValue("@ScheduleID", scheduleID);
+                                        subCmd.Parameters.AddWithValue("@userID", userID);
+                                        subCmd.Parameters.AddWithValue("@scheduleID", scheduleID);
                                         using (SqlDataReader subReader = subCmd.ExecuteReader()) {
                                             if (subReader.HasRows) {
                                                 while (subReader.Read()) {

@@ -244,6 +244,7 @@
     <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="User.Master" />
+    <None Include="Properties\PublishProfiles\AvaliaMP - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\IT114LMachineProblem20240329045700 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
