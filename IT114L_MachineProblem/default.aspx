@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            "Head to (Url Here)/Login.aspx"
+            <a href="https://avaliaapp.azurewebsites.net/Logins.aspx">Click Me</a>
         </div>
     </form>
 </body>
